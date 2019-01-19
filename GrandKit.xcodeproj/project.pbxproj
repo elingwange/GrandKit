@@ -17,6 +17,10 @@
 		206C3F3F21F1B8480000F116 /* UILabel+Manage.m in Sources */ = {isa = PBXBuildFile; fileRef = 206C3F3E21F1B8480000F116 /* UILabel+Manage.m */; };
 		206C3F4321F2CE400000F116 /* GKSocketBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 206C3F4221F2CE400000F116 /* GKSocketBaseViewController.m */; };
 		206C3F4C21F2F1D80000F116 /* UIImage+Com.m in Sources */ = {isa = PBXBuildFile; fileRef = 206C3F4B21F2F1D80000F116 /* UIImage+Com.m */; };
+		206C3F4F21F3035F0000F116 /* GKNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 206C3F4E21F3035F0000F116 /* GKNavigationController.m */; };
+		206C3F5221F304C80000F116 /* UIFont+Com.m in Sources */ = {isa = PBXBuildFile; fileRef = 206C3F5121F304C80000F116 /* UIFont+Com.m */; };
+		206C3F5421F3069A0000F116 /* note in Resources */ = {isa = PBXBuildFile; fileRef = 206C3F5321F3069A0000F116 /* note */; };
+		206C3F5721F307F40000F116 /* GKBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 206C3F5621F307F40000F116 /* GKBaseViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +46,13 @@
 		206C3F4221F2CE400000F116 /* GKSocketBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GKSocketBaseViewController.m; sourceTree = "<group>"; };
 		206C3F4A21F2F1D80000F116 /* UIImage+Com.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Com.h"; sourceTree = "<group>"; };
 		206C3F4B21F2F1D80000F116 /* UIImage+Com.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Com.m"; sourceTree = "<group>"; };
+		206C3F4D21F3035F0000F116 /* GKNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GKNavigationController.h; sourceTree = "<group>"; };
+		206C3F4E21F3035F0000F116 /* GKNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GKNavigationController.m; sourceTree = "<group>"; };
+		206C3F5021F304C80000F116 /* UIFont+Com.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIFont+Com.h"; sourceTree = "<group>"; };
+		206C3F5121F304C80000F116 /* UIFont+Com.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIFont+Com.m"; sourceTree = "<group>"; };
+		206C3F5321F3069A0000F116 /* note */ = {isa = PBXFileReference; lastKnownFileType = text; path = note; sourceTree = "<group>"; };
+		206C3F5521F307F40000F116 /* GKBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GKBaseViewController.h; sourceTree = "<group>"; };
+		206C3F5621F307F40000F116 /* GKBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GKBaseViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +90,7 @@
 				206C3F3121F1A5A00000F116 /* Base */,
 				206C3F3C21F1B7ED0000F116 /* Categary */,
 				206C3F2E21F182840000F116 /* Supporting Files */,
+				206C3F5321F3069A0000F116 /* note */,
 			);
 			path = GrandKit;
 			sourceTree = "<group>";
@@ -102,6 +114,10 @@
 				206C3F2721F181F40000F116 /* main.m */,
 				206C3F1821F181F30000F116 /* GKAppDelegate.h */,
 				206C3F1921F181F30000F116 /* GKAppDelegate.m */,
+				206C3F4D21F3035F0000F116 /* GKNavigationController.h */,
+				206C3F4E21F3035F0000F116 /* GKNavigationController.m */,
+				206C3F5521F307F40000F116 /* GKBaseViewController.h */,
+				206C3F5621F307F40000F116 /* GKBaseViewController.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -126,6 +142,8 @@
 				206C3F3E21F1B8480000F116 /* UILabel+Manage.m */,
 				206C3F4A21F2F1D80000F116 /* UIImage+Com.h */,
 				206C3F4B21F2F1D80000F116 /* UIImage+Com.m */,
+				206C3F5021F304C80000F116 /* UIFont+Com.h */,
+				206C3F5121F304C80000F116 /* UIFont+Com.m */,
 			);
 			path = Categary;
 			sourceTree = "<group>";
@@ -198,6 +216,7 @@
 			files = (
 				206C3F2521F181F40000F116 /* LaunchScreen.storyboard in Resources */,
 				206C3F2221F181F40000F116 /* Assets.xcassets in Resources */,
+				206C3F5421F3069A0000F116 /* note in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,8 +229,11 @@
 			files = (
 				206C3F3521F1AB040000F116 /* KCContact.m in Sources */,
 				206C3F1D21F181F30000F116 /* GKMainViewController.m in Sources */,
+				206C3F5721F307F40000F116 /* GKBaseViewController.m in Sources */,
 				206C3F3821F1AB3D0000F116 /* KCContactGroup.m in Sources */,
 				206C3F4C21F2F1D80000F116 /* UIImage+Com.m in Sources */,
+				206C3F5221F304C80000F116 /* UIFont+Com.m in Sources */,
+				206C3F4F21F3035F0000F116 /* GKNavigationController.m in Sources */,
 				206C3F2821F181F40000F116 /* main.m in Sources */,
 				206C3F4321F2CE400000F116 /* GKSocketBaseViewController.m in Sources */,
 				206C3F1A21F181F30000F116 /* GKAppDelegate.m in Sources */,

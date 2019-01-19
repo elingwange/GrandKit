@@ -20,7 +20,7 @@
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = Color_FromRGB(0xF5F5F5);
     
-    self.navigationController = [UINavigationController new];
+    self.navigationController = [GKNavigationController new];
     self.window.rootViewController = self.navigationController;
     
     self.mainViewController = [GKMainViewController new];

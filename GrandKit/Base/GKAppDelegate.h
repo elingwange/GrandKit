@@ -7,12 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GKNavigationController.h"
 #import "GKMainViewController.h"
 
 @interface GKAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-@property (strong, nonatomic) UINavigationController *navigationController;
+@property (strong, nonatomic) GKNavigationController *navigationController;
 @property (strong, nonatomic) GKMainViewController *mainViewController;
 
 @end

@@ -113,15 +113,15 @@
 
 #pragma mark 返回每组行数
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    NSLog(@"计算每组(组%i)行数",section);
-    KCContactGroup *group1=_contactArray[section];
-    return group1.contacts.count;
+    NSLog(@"计算每组(组%i)行数", (int)section);
+    KCContactGroup *group = _contactArray[section];
+    return group.contacts.count;
 }
 
 #pragma mark返回每行的单元格
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     //NSIndexPath是一个结构体，记录了组和行信息
-    NSLog(@"生成单元格(组：%i,行%i)",indexPath.section,indexPath.row);
+    NSLog(@"生成单元格(组：%i,行%i)", (int)indexPath.section, (int)indexPath.row);
     KCContactGroup *group=_contactArray[indexPath.section];
     KCContact *contact=group.contacts[indexPath.row];
     UITableViewCell *cell=[[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil];
@@ -133,14 +133,14 @@
 
 #pragma mark 返回每组头标题名称
 -(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
-    NSLog(@"生成组（组%i）名称",section);
+    NSLog(@"生成组（组%i）名称", (int)section);
     KCContactGroup *group=_contactArray[section];
     return group.name;
 }
 
 #pragma mark 返回每组尾部说明
 -(NSString *)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section{
-    NSLog(@"生成尾部（组%i）详情",section);
+    NSLog(@"生成尾部（组%i）详情", (int)section);
     KCContactGroup *group=_contactArray[section];
     return group.detail;
 }
@@ -168,37 +168,9 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:NO];
     
-//    _selectedIndexPath=indexPath;
-//    KCContactGroup *group=_contactArray[indexPath.section];
-//    KCContact *contact=group.contacts[indexPath.row];
-//    //创建弹出窗口
-//    UIAlertView *alert=[[UIAlertView alloc]initWithTitle:@"System Info" message:[contact getName] delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"OK", nil];
-//    alert.alertViewStyle=UIAlertViewStylePlainTextInput; //设置窗口内容样式
-//    UITextField *textField= [alert textFieldAtIndex:0]; //取得文本框
-//    textField.text=contact.phoneNumber; //设置文本框内容
-//    [alert show]; //显示窗口
     
     GKSocketBaseViewController *controller = [[GKSocketBaseViewController alloc]init];
     [self.navigationController pushViewController:controller animated:YES];
 }
 
-#pragma mark 窗口的代理方法，用户保存数据
-//-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
-//    //当点击了第二个按钮（OK）
-//    if (buttonIndex==1) {
-//        UITextField *textField= [alertView textFieldAtIndex:0];
-//        //修改模型数据
-//        KCContactGroup *group=_contactArray[_selectedIndexPath.section];
-//        KCContact *contact=group.contacts[_selectedIndexPath.row];
-//        contact.phoneNumber=textField.text;
-//        //刷新表格
-//        NSArray *indexPaths=@[_selectedIndexPath];//需要局部刷新的单元格的组、行
-//        [_tableView reloadRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationLeft];//后面的参数代表更新时的动画
-//    }
-//}
-//
-//#pragma mark 重写状态样式方法
-//-(UIStatusBarStyle)preferredStatusBarStyle{
-//    return UIStatusBarStyleLightContent;
-//}
 @end

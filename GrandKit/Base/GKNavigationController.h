@@ -1,5 +1,5 @@
 //
-//  GKSocketBaseViewController.h
+//  GKNavigationViewController.h
 //  GrandKit
 //
 //  Created by Evan Fang on 2019/1/19.
@@ -7,11 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "GKBaseViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface GKSocketBaseViewController : GKBaseViewController
+@interface GKNavigationController : UINavigationController
 
 @end
 
