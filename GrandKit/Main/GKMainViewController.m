@@ -10,7 +10,6 @@
 #import "KCContact.h"
 #import "KCContactGroup.h"
 #import "UILabel+Manage.h"
-#import "GKSocketBaseViewController.h"
 
 @interface GKMainViewController ()<UITableViewDataSource, UITableViewDelegate> { // 类名 () Extension-类扩展
     // Extension是Category的一个特例。类扩展与分类相比只少了分类的名称，所以称之为“匿名分类”
@@ -67,7 +66,8 @@
     
     KCContact *contact1=[KCContact initWithFirstName:@"Base" andLastName:@"Socket" andPhoneNumber:@"GKSocketBaseViewController"];
     KCContact *contact2=[KCContact initWithFirstName:@"Chat" andLastName:@"Socket" andPhoneNumber:@"GKSocketChatViewController"];
-    KCContactGroup *group1=[KCContactGroup initWithName:@"网络" andDetail:@"" andContacts:[NSMutableArray arrayWithObjects:contact1,contact2, nil]];
+    KCContact *contact3=[KCContact initWithFirstName:@"Http" andLastName:@"Socket" andPhoneNumber:@"GKSocketHttpViewController"];
+    KCContactGroup *group1=[KCContactGroup initWithName:@"网络" andDetail:@"" andContacts:[NSMutableArray arrayWithObjects:contact1, contact2, contact3, nil]];
     [_contactArray addObject:group1];
     
     
