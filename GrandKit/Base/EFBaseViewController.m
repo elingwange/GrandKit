@@ -6,13 +6,13 @@
 //  Copyright © 2019 Evan Fang. All rights reserved.
 //
 
-#import "GKBaseViewController.h"
+#import "EFBaseViewController.h"
 
-@interface GKBaseViewController ()
+@interface EFBaseViewController ()
 
 @end
 
-@implementation GKBaseViewController
+@implementation EFBaseViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

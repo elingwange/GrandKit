@@ -17,10 +17,12 @@
 		206C3F3F21F1B8480000F116 /* UILabel+Manage.m in Sources */ = {isa = PBXBuildFile; fileRef = 206C3F3E21F1B8480000F116 /* UILabel+Manage.m */; };
 		206C3F4321F2CE400000F116 /* GKSocketBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 206C3F4221F2CE400000F116 /* GKSocketBaseViewController.m */; };
 		206C3F4C21F2F1D80000F116 /* UIImage+Com.m in Sources */ = {isa = PBXBuildFile; fileRef = 206C3F4B21F2F1D80000F116 /* UIImage+Com.m */; };
-		206C3F4F21F3035F0000F116 /* GKNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 206C3F4E21F3035F0000F116 /* GKNavigationController.m */; };
+		206C3F4F21F3035F0000F116 /* EFNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 206C3F4E21F3035F0000F116 /* EFNavigationController.m */; };
 		206C3F5221F304C80000F116 /* UIFont+Com.m in Sources */ = {isa = PBXBuildFile; fileRef = 206C3F5121F304C80000F116 /* UIFont+Com.m */; };
 		206C3F5421F3069A0000F116 /* note in Resources */ = {isa = PBXBuildFile; fileRef = 206C3F5321F3069A0000F116 /* note */; };
-		206C3F5721F307F40000F116 /* GKBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 206C3F5621F307F40000F116 /* GKBaseViewController.m */; };
+		206C3F5721F307F40000F116 /* EFBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 206C3F5621F307F40000F116 /* EFBaseViewController.m */; };
+		207880AA21F570A90030D4F5 /* GKSocketChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 207880A921F570A90030D4F5 /* GKSocketChatViewController.m */; };
+		207880B021F5920E0030D4F5 /* NSString+Com.m in Sources */ = {isa = PBXBuildFile; fileRef = 207880AF21F5920E0030D4F5 /* NSString+Com.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,13 +48,17 @@
 		206C3F4221F2CE400000F116 /* GKSocketBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GKSocketBaseViewController.m; sourceTree = "<group>"; };
 		206C3F4A21F2F1D80000F116 /* UIImage+Com.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Com.h"; sourceTree = "<group>"; };
 		206C3F4B21F2F1D80000F116 /* UIImage+Com.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Com.m"; sourceTree = "<group>"; };
-		206C3F4D21F3035F0000F116 /* GKNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GKNavigationController.h; sourceTree = "<group>"; };
-		206C3F4E21F3035F0000F116 /* GKNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GKNavigationController.m; sourceTree = "<group>"; };
+		206C3F4D21F3035F0000F116 /* EFNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EFNavigationController.h; sourceTree = "<group>"; };
+		206C3F4E21F3035F0000F116 /* EFNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EFNavigationController.m; sourceTree = "<group>"; };
 		206C3F5021F304C80000F116 /* UIFont+Com.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIFont+Com.h"; sourceTree = "<group>"; };
 		206C3F5121F304C80000F116 /* UIFont+Com.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIFont+Com.m"; sourceTree = "<group>"; };
 		206C3F5321F3069A0000F116 /* note */ = {isa = PBXFileReference; lastKnownFileType = text; path = note; sourceTree = "<group>"; };
-		206C3F5521F307F40000F116 /* GKBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GKBaseViewController.h; sourceTree = "<group>"; };
-		206C3F5621F307F40000F116 /* GKBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GKBaseViewController.m; sourceTree = "<group>"; };
+		206C3F5521F307F40000F116 /* EFBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EFBaseViewController.h; sourceTree = "<group>"; };
+		206C3F5621F307F40000F116 /* EFBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EFBaseViewController.m; sourceTree = "<group>"; };
+		207880A821F570A90030D4F5 /* GKSocketChatViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GKSocketChatViewController.h; sourceTree = "<group>"; };
+		207880A921F570A90030D4F5 /* GKSocketChatViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GKSocketChatViewController.m; sourceTree = "<group>"; };
+		207880AE21F5920E0030D4F5 /* NSString+Com.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Com.h"; sourceTree = "<group>"; };
+		207880AF21F5920E0030D4F5 /* NSString+Com.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Com.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,10 +120,10 @@
 				206C3F2721F181F40000F116 /* main.m */,
 				206C3F1821F181F30000F116 /* GKAppDelegate.h */,
 				206C3F1921F181F30000F116 /* GKAppDelegate.m */,
-				206C3F4D21F3035F0000F116 /* GKNavigationController.h */,
-				206C3F4E21F3035F0000F116 /* GKNavigationController.m */,
-				206C3F5521F307F40000F116 /* GKBaseViewController.h */,
-				206C3F5621F307F40000F116 /* GKBaseViewController.m */,
+				206C3F4D21F3035F0000F116 /* EFNavigationController.h */,
+				206C3F4E21F3035F0000F116 /* EFNavigationController.m */,
+				206C3F5521F307F40000F116 /* EFBaseViewController.h */,
+				206C3F5621F307F40000F116 /* EFBaseViewController.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -144,6 +150,8 @@
 				206C3F4B21F2F1D80000F116 /* UIImage+Com.m */,
 				206C3F5021F304C80000F116 /* UIFont+Com.h */,
 				206C3F5121F304C80000F116 /* UIFont+Com.m */,
+				207880AE21F5920E0030D4F5 /* NSString+Com.h */,
+				207880AF21F5920E0030D4F5 /* NSString+Com.m */,
 			);
 			path = Categary;
 			sourceTree = "<group>";
@@ -153,6 +161,8 @@
 			children = (
 				206C3F4121F2CE400000F116 /* GKSocketBaseViewController.h */,
 				206C3F4221F2CE400000F116 /* GKSocketBaseViewController.m */,
+				207880A821F570A90030D4F5 /* GKSocketChatViewController.h */,
+				207880A921F570A90030D4F5 /* GKSocketChatViewController.m */,
 			);
 			path = Net;
 			sourceTree = "<group>";
@@ -229,11 +239,13 @@
 			files = (
 				206C3F3521F1AB040000F116 /* KCContact.m in Sources */,
 				206C3F1D21F181F30000F116 /* GKMainViewController.m in Sources */,
-				206C3F5721F307F40000F116 /* GKBaseViewController.m in Sources */,
+				206C3F5721F307F40000F116 /* EFBaseViewController.m in Sources */,
 				206C3F3821F1AB3D0000F116 /* KCContactGroup.m in Sources */,
+				207880B021F5920E0030D4F5 /* NSString+Com.m in Sources */,
 				206C3F4C21F2F1D80000F116 /* UIImage+Com.m in Sources */,
+				207880AA21F570A90030D4F5 /* GKSocketChatViewController.m in Sources */,
 				206C3F5221F304C80000F116 /* UIFont+Com.m in Sources */,
-				206C3F4F21F3035F0000F116 /* GKNavigationController.m in Sources */,
+				206C3F4F21F3035F0000F116 /* EFNavigationController.m in Sources */,
 				206C3F2821F181F40000F116 /* main.m in Sources */,
 				206C3F4321F2CE400000F116 /* GKSocketBaseViewController.m in Sources */,
 				206C3F1A21F181F30000F116 /* GKAppDelegate.m in Sources */,

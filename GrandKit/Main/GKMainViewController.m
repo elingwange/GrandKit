@@ -65,8 +65,8 @@
 -(void)initData{
     _contactArray=[[NSMutableArray alloc]init];
     
-    KCContact *contact1=[KCContact initWithFirstName:@"Base" andLastName:@"Socket" andPhoneNumber:@"18500131234"];
-    KCContact *contact2=[KCContact initWithFirstName:@"Http" andLastName:@"Socket" andPhoneNumber:@"18500131237"];
+    KCContact *contact1=[KCContact initWithFirstName:@"Base" andLastName:@"Socket" andPhoneNumber:@"GKSocketBaseViewController"];
+    KCContact *contact2=[KCContact initWithFirstName:@"Chat" andLastName:@"Socket" andPhoneNumber:@"GKSocketChatViewController"];
     KCContactGroup *group1=[KCContactGroup initWithName:@"网络" andDetail:@"" andContacts:[NSMutableArray arrayWithObjects:contact1,contact2, nil]];
     [_contactArray addObject:group1];
     
@@ -107,13 +107,13 @@
 #pragma mark - 数据源方法
 #pragma mark 返回分组数
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    NSLog(@"计算分组数");
+//    NSLog(@"计算分组数");
     return _contactArray.count;
 }
 
 #pragma mark 返回每组行数
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    NSLog(@"计算每组(组%i)行数", (int)section);
+//    NSLog(@"计算每组(组%i)行数", (int)section);
     KCContactGroup *group = _contactArray[section];
     return group.contacts.count;
 }
@@ -121,7 +121,7 @@
 #pragma mark返回每行的单元格
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     //NSIndexPath是一个结构体，记录了组和行信息
-    NSLog(@"生成单元格(组：%i,行%i)", (int)indexPath.section, (int)indexPath.row);
+//    NSLog(@"生成单元格(组：%i,行%i)", (int)indexPath.section, (int)indexPath.row);
     KCContactGroup *group=_contactArray[indexPath.section];
     KCContact *contact=group.contacts[indexPath.row];
     UITableViewCell *cell=[[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil];
@@ -133,14 +133,14 @@
 
 #pragma mark 返回每组头标题名称
 -(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
-    NSLog(@"生成组（组%i）名称", (int)section);
+//    NSLog(@"生成组（组%i）名称", (int)section);
     KCContactGroup *group=_contactArray[section];
     return group.name;
 }
 
 #pragma mark 返回每组尾部说明
 -(NSString *)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section{
-    NSLog(@"生成尾部（组%i）详情", (int)section);
+//    NSLog(@"生成尾部（组%i）详情", (int)section);
     KCContactGroup *group=_contactArray[section];
     return group.detail;
 }
@@ -168,9 +168,15 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:NO];
     
-    
-    GKSocketBaseViewController *controller = [[GKSocketBaseViewController alloc]init];
-    [self.navigationController pushViewController:controller animated:YES];
+    KCContactGroup *group = _contactArray[indexPath.section];
+    KCContact *contact = group.contacts[indexPath.row];
+    //创建视图控制器的Class
+    //使用class间接使用类名，即使不加头文件，也能创建对象。
+    //编译器要求直接引用类名等标识符，必须拥有声明。
+    Class aVCClass = NSClassFromString(contact.phoneNumber);
+    //创建vc对象
+    UIViewController * vc = [[aVCClass alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 @end

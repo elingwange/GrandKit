@@ -6,13 +6,13 @@
 //  Copyright © 2019 Evan Fang. All rights reserved.
 //
 
-#import "GKNavigationController.h"
+#import "EFNavigationController.h"
 
-@interface GKNavigationController () <UIGestureRecognizerDelegate>
+@interface EFNavigationController () <UIGestureRecognizerDelegate>
 
 @end
 
-@implementation GKNavigationController
+@implementation EFNavigationController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
