@@ -67,40 +67,18 @@
     KCContact *contact1=[KCContact initWithFirstName:@"Base" andLastName:@"Socket" andPhoneNumber:@"GKSocketBaseViewController"];
     KCContact *contact2=[KCContact initWithFirstName:@"Chat" andLastName:@"Socket" andPhoneNumber:@"GKSocketChatViewController"];
     KCContact *contact3=[KCContact initWithFirstName:@"Http" andLastName:@"Socket" andPhoneNumber:@"GKSocketHttpViewController"];
-    KCContactGroup *group1=[KCContactGroup initWithName:@"网络" andDetail:@"" andContacts:[NSMutableArray arrayWithObjects:contact1, contact2, contact3, nil]];
+    KCContactGroup *group1=[KCContactGroup initWithName:@"Socket" andDetail:@"" andContacts:[NSMutableArray arrayWithObjects:contact1, contact2, contact3, nil]];
     [_contactArray addObject:group1];
     
     
-    
-//    KCContact *contact3=[KCContact initWithFirstName:@"Lee" andLastName:@"Terry" andPhoneNumber:@"18500131238"];
-//    KCContact *contact4=[KCContact initWithFirstName:@"Lee" andLastName:@"Jack" andPhoneNumber:@"18500131239"];
-//    KCContact *contact5=[KCContact initWithFirstName:@"Lee" andLastName:@"Rose" andPhoneNumber:@"18500131240"];
-//    KCContactGroup *group2=[KCContactGroup initWithName:@"L" andDetail:@"With names beginning with L" andContacts:[NSMutableArray arrayWithObjects:contact3,contact4,contact5, nil]];
-//    [_contactArray addObject:group2];
-//
-//
-//
-//    KCContact *contact6=[KCContact initWithFirstName:@"Sun" andLastName:@"Kaoru" andPhoneNumber:@"18500131235"];
-//    KCContact *contact7=[KCContact initWithFirstName:@"Sun" andLastName:@"Rosa" andPhoneNumber:@"18500131236"];
-//
-//    KCContactGroup *group3=[KCContactGroup initWithName:@"S" andDetail:@"With names beginning with S" andContacts:[NSMutableArray arrayWithObjects:contact6,contact7, nil]];
-//    [_contactArray addObject:group3];
-//
-//
-//    KCContact *contact8=[KCContact initWithFirstName:@"Wang" andLastName:@"Stephone" andPhoneNumber:@"18500131241"];
-//    KCContact *contact9=[KCContact initWithFirstName:@"Wang" andLastName:@"Lucy" andPhoneNumber:@"18500131242"];
-//    KCContact *contact10=[KCContact initWithFirstName:@"Wang" andLastName:@"Lily" andPhoneNumber:@"18500131243"];
-//    KCContact *contact11=[KCContact initWithFirstName:@"Wang" andLastName:@"Emily" andPhoneNumber:@"18500131244"];
-//    KCContact *contact12=[KCContact initWithFirstName:@"Wang" andLastName:@"Andy" andPhoneNumber:@"18500131245"];
-//    KCContactGroup *group4=[KCContactGroup initWithName:@"W" andDetail:@"With names beginning with W" andContacts:[NSMutableArray arrayWithObjects:contact8,contact9,contact10,contact11,contact12, nil]];
-//    [_contactArray addObject:group4];
-//
-//
-//    KCContact *contact13=[KCContact initWithFirstName:@"Zhang" andLastName:@"Joy" andPhoneNumber:@"18500131246"];
-//    KCContact *contact14=[KCContact initWithFirstName:@"Zhang" andLastName:@"Vivan" andPhoneNumber:@"18500131247"];
-//    KCContact *contact15=[KCContact initWithFirstName:@"Zhang" andLastName:@"Joyse" andPhoneNumber:@"18500131248"];
-//    KCContactGroup *group5=[KCContactGroup initWithName:@"Z" andDetail:@"With names beginning with Z" andContacts:[NSMutableArray arrayWithObjects:contact13,contact14,contact15, nil]];
-//    [_contactArray addObject:group5];
+    KCContact *contact11=[KCContact initWithFirstName:@"Download" andLastName:@"NSURLConnection" andPhoneNumber:@"GKURLConnectionDownloadViewController"];
+    KCContact *contact12=[KCContact initWithFirstName:@"Deligate Download" andLastName:@"NSURLConnection" andPhoneNumber:@"GKURLConnectionDeligateDownloadViewController"];
+    KCContact *contact13=[KCContact initWithFirstName:@"Deligate 2 Download" andLastName:@"NSURLConnection" andPhoneNumber:@"GKURLConnectionDeligateDownload2ViewController"];
+    KCContact *contact14=[KCContact initWithFirstName:@"Deligate 3 Download" andLastName:@"NSURLConnection" andPhoneNumber:@"GKURLConnectionDeligateDownload3ViewController"];
+    KCContactGroup *group2=[KCContactGroup initWithName:@"NSURLConnection" andDetail:@"" andContacts:[NSMutableArray arrayWithObjects:contact11, contact12, contact13, contact14, nil]];
+    [_contactArray addObject:group2];
+
+
     
 }
 
