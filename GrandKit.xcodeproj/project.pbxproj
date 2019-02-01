@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2036739E22042C43009DF23A /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 2036739622042C43009DF23A /* unzip.c */; };
+		2036739F22042C43009DF23A /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 2036739722042C43009DF23A /* zip.c */; };
+		203673A022042C43009DF23A /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 2036739822042C43009DF23A /* ioapi.c */; };
+		203673A122042C43009DF23A /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = 2036739922042C43009DF23A /* mztools.c */; };
+		203673A422042C4E009DF23A /* SSZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = 203673A322042C4D009DF23A /* SSZipArchive.m */; };
 		20560E8A21F9693A000B927F /* GKURLConnectionDownloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20560E8921F9693A000B927F /* GKURLConnectionDownloadViewController.m */; };
 		20560E8D21F9B18E000B927F /* GKURLConnectionDeligateDownloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20560E8C21F9B18E000B927F /* GKURLConnectionDeligateDownloadViewController.m */; };
 		20560E9F21FC0613000B927F /* GKURLConnectionDeligateDownload2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20560E9E21FC0613000B927F /* GKURLConnectionDeligateDownload2ViewController.m */; };
@@ -28,9 +33,21 @@
 		207880AA21F570A90030D4F5 /* GKSocketChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 207880A921F570A90030D4F5 /* GKSocketChatViewController.m */; };
 		207880B021F5920E0030D4F5 /* NSString+Com.m in Sources */ = {isa = PBXBuildFile; fileRef = 207880AF21F5920E0030D4F5 /* NSString+Com.m */; };
 		2096F2B721F88388008DC254 /* GKSocketHttpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2096F2B621F88388008DC254 /* GKSocketHttpViewController.m */; };
+		20E020362202E82A0037BE1F /* GKURLSessionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E020352202E82A0037BE1F /* GKURLSessionViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2036739622042C43009DF23A /* unzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unzip.c; sourceTree = "<group>"; };
+		2036739722042C43009DF23A /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
+		2036739822042C43009DF23A /* ioapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi.c; sourceTree = "<group>"; };
+		2036739922042C43009DF23A /* mztools.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mztools.c; sourceTree = "<group>"; };
+		2036739A22042C43009DF23A /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
+		2036739B22042C43009DF23A /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
+		2036739C22042C43009DF23A /* mztools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mztools.h; sourceTree = "<group>"; };
+		2036739D22042C43009DF23A /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
+		203673A222042C4D009DF23A /* SSZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSZipArchive.h; sourceTree = "<group>"; };
+		203673A322042C4D009DF23A /* SSZipArchive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSZipArchive.m; sourceTree = "<group>"; };
+		203673A522042C83009DF23A /* unzip.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
 		20560E8821F9693A000B927F /* GKURLConnectionDownloadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GKURLConnectionDownloadViewController.h; sourceTree = "<group>"; };
 		20560E8921F9693A000B927F /* GKURLConnectionDownloadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GKURLConnectionDownloadViewController.m; sourceTree = "<group>"; };
 		20560E8B21F9B18E000B927F /* GKURLConnectionDeligateDownloadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GKURLConnectionDeligateDownloadViewController.h; sourceTree = "<group>"; };
@@ -74,6 +91,8 @@
 		207880AF21F5920E0030D4F5 /* NSString+Com.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Com.m"; sourceTree = "<group>"; };
 		2096F2B521F88388008DC254 /* GKSocketHttpViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GKSocketHttpViewController.h; sourceTree = "<group>"; };
 		2096F2B621F88388008DC254 /* GKSocketHttpViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GKSocketHttpViewController.m; sourceTree = "<group>"; };
+		20E020342202E82A0037BE1F /* GKURLSessionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GKURLSessionViewController.h; sourceTree = "<group>"; };
+		20E020352202E82A0037BE1F /* GKURLSessionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GKURLSessionViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +106,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2036739422042C35009DF23A /* SSZipArchive */ = {
+			isa = PBXGroup;
+			children = (
+				2036739522042C43009DF23A /* minizip */,
+				203673A222042C4D009DF23A /* SSZipArchive.h */,
+				203673A322042C4D009DF23A /* SSZipArchive.m */,
+			);
+			path = SSZipArchive;
+			sourceTree = "<group>";
+		};
+		2036739522042C43009DF23A /* minizip */ = {
+			isa = PBXGroup;
+			children = (
+				203673A522042C83009DF23A /* unzip.h */,
+				2036739622042C43009DF23A /* unzip.c */,
+				2036739722042C43009DF23A /* zip.c */,
+				2036739822042C43009DF23A /* ioapi.c */,
+				2036739922042C43009DF23A /* mztools.c */,
+				2036739A22042C43009DF23A /* crypt.h */,
+				2036739B22042C43009DF23A /* zip.h */,
+				2036739C22042C43009DF23A /* mztools.h */,
+				2036739D22042C43009DF23A /* ioapi.h */,
+			);
+			path = minizip;
+			sourceTree = "<group>";
+		};
 		20560E8721F968F6000B927F /* Http */ = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +143,8 @@
 				20560E9E21FC0613000B927F /* GKURLConnectionDeligateDownload2ViewController.m */,
 				20560EA021FC0C3A000B927F /* GKURLConnectionDeligateDownload3ViewController.h */,
 				20560EA121FC0C3A000B927F /* GKURLConnectionDeligateDownload3ViewController.m */,
+				20E020342202E82A0037BE1F /* GKURLSessionViewController.h */,
+				20E020352202E82A0037BE1F /* GKURLSessionViewController.m */,
 			);
 			path = Http;
 			sourceTree = "<group>";
@@ -121,6 +168,7 @@
 		206C3F1721F181F30000F116 /* GrandKit */ = {
 			isa = PBXGroup;
 			children = (
+				2036739422042C35009DF23A /* SSZipArchive */,
 				20560E8721F968F6000B927F /* Http */,
 				206C3F4021F2CDE30000F116 /* Socket */,
 				206C3F3221F1AAE90000F116 /* Main */,
@@ -276,16 +324,22 @@
 				20560EA221FC0C3A000B927F /* GKURLConnectionDeligateDownload3ViewController.m in Sources */,
 				206C3F5721F307F40000F116 /* EFBaseViewController.m in Sources */,
 				206C3F3821F1AB3D0000F116 /* KCContactGroup.m in Sources */,
+				2036739E22042C43009DF23A /* unzip.c in Sources */,
 				207880B021F5920E0030D4F5 /* NSString+Com.m in Sources */,
+				203673A022042C43009DF23A /* ioapi.c in Sources */,
 				206C3F4C21F2F1D80000F116 /* UIImage+Com.m in Sources */,
+				20E020362202E82A0037BE1F /* GKURLSessionViewController.m in Sources */,
 				20560E8A21F9693A000B927F /* GKURLConnectionDownloadViewController.m in Sources */,
 				20560E9F21FC0613000B927F /* GKURLConnectionDeligateDownload2ViewController.m in Sources */,
 				207880AA21F570A90030D4F5 /* GKSocketChatViewController.m in Sources */,
+				203673A122042C43009DF23A /* mztools.c in Sources */,
 				206C3F5221F304C80000F116 /* UIFont+Com.m in Sources */,
 				206C3F4F21F3035F0000F116 /* EFNavigationController.m in Sources */,
 				206C3F2821F181F40000F116 /* main.m in Sources */,
 				206C3F4321F2CE400000F116 /* GKSocketBaseViewController.m in Sources */,
 				206C3F1A21F181F30000F116 /* GKAppDelegate.m in Sources */,
+				203673A422042C4E009DF23A /* SSZipArchive.m in Sources */,
+				2036739F22042C43009DF23A /* zip.c in Sources */,
 				206C3F3F21F1B8480000F116 /* UILabel+Manage.m in Sources */,
 				20560E8D21F9B18E000B927F /* GKURLConnectionDeligateDownloadViewController.m in Sources */,
 			);

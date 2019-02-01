@@ -71,13 +71,16 @@
     [_contactArray addObject:group1];
     
     
-    KCContact *contact11=[KCContact initWithFirstName:@"Download" andLastName:@"NSURLConnection" andPhoneNumber:@"GKURLConnectionDownloadViewController"];
-    KCContact *contact12=[KCContact initWithFirstName:@"Deligate Download" andLastName:@"NSURLConnection" andPhoneNumber:@"GKURLConnectionDeligateDownloadViewController"];
-    KCContact *contact13=[KCContact initWithFirstName:@"Deligate 2 Download" andLastName:@"NSURLConnection" andPhoneNumber:@"GKURLConnectionDeligateDownload2ViewController"];
-    KCContact *contact14=[KCContact initWithFirstName:@"Deligate 3 Download" andLastName:@"NSURLConnection" andPhoneNumber:@"GKURLConnectionDeligateDownload3ViewController"];
+    KCContact *contact11=[KCContact initWithFirstName:@"" andLastName:@"Base Download" andPhoneNumber:@"GKURLConnectionDownloadViewController"];
+    KCContact *contact12=[KCContact initWithFirstName:@"" andLastName:@"Deligate Download" andPhoneNumber:@"GKURLConnectionDeligateDownloadViewController"];
+    KCContact *contact13=[KCContact initWithFirstName:@"" andLastName:@"Deligate 2 Download" andPhoneNumber:@"GKURLConnectionDeligateDownload2ViewController"];
+    KCContact *contact14=[KCContact initWithFirstName:@"" andLastName:@"Deligate 3 Download" andPhoneNumber:@"GKURLConnectionDeligateDownload3ViewController"];
     KCContactGroup *group2=[KCContactGroup initWithName:@"NSURLConnection" andDetail:@"" andContacts:[NSMutableArray arrayWithObjects:contact11, contact12, contact13, contact14, nil]];
     [_contactArray addObject:group2];
 
+    KCContact *contact21=[KCContact initWithFirstName:@"" andLastName:@"Base" andPhoneNumber:@"GKURLSessionViewController"];
+    KCContactGroup *group3=[KCContactGroup initWithName:@"NSURLSession" andDetail:@"" andContacts:[NSMutableArray arrayWithObjects:contact21, nil]];
+    [_contactArray addObject:group3];
 
     
 }
