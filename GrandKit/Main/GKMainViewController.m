@@ -7,9 +7,9 @@
 //
 
 #import "GKMainViewController.h"
-#import "KCContact.h"
-#import "KCContactGroup.h"
 #import "UILabel+Manage.h"
+#import "GKPoint.h"
+#import "GKGroup.h"
 
 @interface GKMainViewController ()<UITableViewDataSource, UITableViewDelegate> { // 类名 () Extension-类扩展
     // Extension是Category的一个特例。类扩展与分类相比只少了分类的名称，所以称之为“匿名分类”
@@ -18,7 +18,7 @@
     
     UILabel *_lbTitle;
     UITableView *_tableView;
-    NSMutableArray *_contactArray;//联系人模型
+    NSMutableArray *_groupArray;
     NSIndexPath *_selectedIndexPath;//当前选中的组和行
 }
 
@@ -62,52 +62,49 @@
 
 #pragma mark 加载数据
 -(void)initData{
-    _contactArray=[[NSMutableArray alloc]init];
+    _groupArray=[[NSMutableArray alloc]init];
     
-    KCContact *contact1=[KCContact initWithFirstName:@"Base" andLastName:@"Socket" andPhoneNumber:@"GKSocketBaseViewController"];
-    KCContact *contact2=[KCContact initWithFirstName:@"Chat" andLastName:@"Socket" andPhoneNumber:@"GKSocketChatViewController"];
-    KCContact *contact3=[KCContact initWithFirstName:@"Http" andLastName:@"Socket" andPhoneNumber:@"GKSocketHttpViewController"];
-    KCContactGroup *group1=[KCContactGroup initWithName:@"Socket" andDetail:@"" andContacts:[NSMutableArray arrayWithObjects:contact1, contact2, contact3, nil]];
-    [_contactArray addObject:group1];
+    GKPoint *point1 = [GKPoint initWithName:@"Base" andClass:@"GKSocketBaseViewController"];
+    GKPoint *point2 = [GKPoint initWithName:@"Chat" andClass:@"GKSocketChatViewController"];
+    GKPoint *point3 = [GKPoint initWithName:@"Http" andClass:@"GKSocketHttpViewController"];
+    GKGroup *group1 = [GKGroup initWithName:@"Socket" andDetail:@"" andPoints:[NSMutableArray arrayWithObjects:point1, point2, point3, nil]];
+    [_groupArray addObject:group1];
     
+    GKPoint *point21 = [GKPoint initWithName:@"Base Download" andClass:@"GKURLConnectionDownloadViewController"];
+    GKPoint *point22 = [GKPoint initWithName:@"Deligate Download" andClass:@"GKURLConnectionDeligateDownloadViewController"];
+    GKPoint *point23 = [GKPoint initWithName:@"Deligate2 Download" andClass:@"GKURLConnectionDeligateDownload2ViewController"];
+    GKPoint *point24 = [GKPoint initWithName:@"Deligate3 Download" andClass:@"GKURLConnectionDeligateDownload3ViewController"];
+    GKGroup *group2 = [GKGroup initWithName:@"NSURLConnection" andDetail:@"" andPoints:[NSMutableArray arrayWithObjects:point21, point22, point23, point24, nil]];
+    [_groupArray addObject:group2];
     
-    KCContact *contact11=[KCContact initWithFirstName:@"" andLastName:@"Base Download" andPhoneNumber:@"GKURLConnectionDownloadViewController"];
-    KCContact *contact12=[KCContact initWithFirstName:@"" andLastName:@"Deligate Download" andPhoneNumber:@"GKURLConnectionDeligateDownloadViewController"];
-    KCContact *contact13=[KCContact initWithFirstName:@"" andLastName:@"Deligate 2 Download" andPhoneNumber:@"GKURLConnectionDeligateDownload2ViewController"];
-    KCContact *contact14=[KCContact initWithFirstName:@"" andLastName:@"Deligate 3 Download" andPhoneNumber:@"GKURLConnectionDeligateDownload3ViewController"];
-    KCContactGroup *group2=[KCContactGroup initWithName:@"NSURLConnection" andDetail:@"" andContacts:[NSMutableArray arrayWithObjects:contact11, contact12, contact13, contact14, nil]];
-    [_contactArray addObject:group2];
-
-    KCContact *contact21=[KCContact initWithFirstName:@"" andLastName:@"Base" andPhoneNumber:@"GKURLSessionViewController"];
-    KCContactGroup *group3=[KCContactGroup initWithName:@"NSURLSession" andDetail:@"" andContacts:[NSMutableArray arrayWithObjects:contact21, nil]];
-    [_contactArray addObject:group3];
-
-    
+    GKPoint *point31 = [GKPoint initWithName:@"Base" andClass:@"GKURLSessionViewController"];
+    GKGroup *group3 = [GKGroup initWithName:@"NSURLSession" andDetail:@"" andPoints:[NSMutableArray arrayWithObjects:point31, nil]];
+    [_groupArray addObject:group3];
 }
 
 #pragma mark - 数据源方法
 #pragma mark 返回分组数
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
 //    NSLog(@"计算分组数");
-    return _contactArray.count;
+    return _groupArray.count;
 }
 
 #pragma mark 返回每组行数
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
 //    NSLog(@"计算每组(组%i)行数", (int)section);
-    KCContactGroup *group = _contactArray[section];
-    return group.contacts.count;
+    GKGroup *group = _groupArray[section];
+    return group.points.count;
 }
 
 #pragma mark返回每行的单元格
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     //NSIndexPath是一个结构体，记录了组和行信息
 //    NSLog(@"生成单元格(组：%i,行%i)", (int)indexPath.section, (int)indexPath.row);
-    KCContactGroup *group=_contactArray[indexPath.section];
-    KCContact *contact=group.contacts[indexPath.row];
-    UITableViewCell *cell=[[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil];
-    cell.textLabel.text=[contact getName];
-    cell.detailTextLabel.text=contact.phoneNumber;
+    GKGroup *group = _groupArray[indexPath.section];
+    GKPoint *point = group.points[indexPath.row];
+    UITableViewCell *cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil];
+    cell.textLabel.text = point.name;
+//    cell.detailTextLabel.text = point.phoneNumber;
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     return cell;
 }
@@ -115,21 +112,21 @@
 #pragma mark 返回每组头标题名称
 -(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
 //    NSLog(@"生成组（组%i）名称", (int)section);
-    KCContactGroup *group=_contactArray[section];
+    GKGroup *group = _groupArray[section];
     return group.name;
 }
 
 #pragma mark 返回每组尾部说明
 -(NSString *)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section{
 //    NSLog(@"生成尾部（组%i）详情", (int)section);
-    KCContactGroup *group=_contactArray[section];
+    GKGroup *group = _groupArray[section];
     return group.detail;
 }
 
 #pragma mark - 代理方法
 #pragma mark 设置分组标题内容高度
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
-    if(section==0){
+    if(section == 0) {
         return 30;
     }
     return 40;
@@ -149,12 +146,12 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:NO];
     
-    KCContactGroup *group = _contactArray[indexPath.section];
-    KCContact *contact = group.contacts[indexPath.row];
+    GKGroup *group = _groupArray[indexPath.section];
+    GKPoint *point = group.points[indexPath.row];
     //创建视图控制器的Class
     //使用class间接使用类名，即使不加头文件，也能创建对象。
     //编译器要求直接引用类名等标识符，必须拥有声明。
-    Class aVCClass = NSClassFromString(contact.phoneNumber);
+    Class aVCClass = NSClassFromString(point.className);
     //创建vc对象
     UIViewController * vc = [[aVCClass alloc] init];
     [self.navigationController pushViewController:vc animated:YES];

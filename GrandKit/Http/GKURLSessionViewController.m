@@ -23,10 +23,11 @@
     NSLog(@"touchesBegan");
     
     // json
-//    NSString *urlString = @"http://192.168.0.136:8080/examples/demo.json";
-//    NSURL *url = [[NSURL alloc]initWithString:urlString];
-//    [self taskWithURL:url];
+    NSString *urlString = @"http://192.168.0.136:8080/examples/demo.json";
+    NSURL *url = [[NSURL alloc]initWithString:urlString];
+    [self taskWithURL:url];
     
+    // zip
     NSURL *url2 = [[NSURL alloc]initWithString:@"http://192.168.0.136:8080/examples/pdf.zip"];
     [self downloadWithURL:url2];
 }
