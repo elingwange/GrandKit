@@ -78,7 +78,9 @@
     [_groupArray addObject:group2];
     
     GKPoint *point31 = [GKPoint initWithName:@"Base" andClass:@"GKURLSessionViewController"];
-    GKGroup *group3 = [GKGroup initWithName:@"NSURLSession" andDetail:@"" andPoints:[NSMutableArray arrayWithObjects:point31, nil]];
+    GKPoint *point32 = [GKPoint initWithName:@"DownloadDelegate" andClass:@"GKURLSessionDeligateDownloadViewController"];
+    GKPoint *point33 = [GKPoint initWithName:@"DownloadDelegate 断点续传" andClass:@"GKURLSessionDeligateDownloadResumeViewController"];
+    GKGroup *group3 = [GKGroup initWithName:@"NSURLSession" andDetail:@"" andPoints:[NSMutableArray arrayWithObjects:point31, point32, point33, nil]];
     [_groupArray addObject:group3];
 }
 

@@ -91,13 +91,7 @@
 
 - (UIButton *)getBtnSend {
     if (!_btnSend) {
-        _btnSend = [[UIButton alloc]initWithFrame:CGRectMake(Width - PADDING - Size(70), Size(30), Size(70), Size(40))];
-        [_btnSend setTitle:@"Send" forState:UIControlStateNormal];
-        [_btnSend setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-        [_btnSend.layer setMasksToBounds:YES];
-        [_btnSend.layer setCornerRadius:5.0]; //设置矩形四个圆角半径
-        _btnSend.layer.borderColor = [[UIColor lightGrayColor] CGColor];
-        [_btnSend.layer setBorderWidth:2.0];
+        _btnSend = [UIButton initWithFrame:CGRectMake(Width - PADDING - Size(70), Size(30), Size(70), Size(40)) title:@"Send"];
     }
     return _btnSend;
 }

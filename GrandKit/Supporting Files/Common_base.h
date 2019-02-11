@@ -12,6 +12,8 @@
 #import "UILabel+Manage.h"
 #import "UIImage+Com.h"
 #import "UIFont+Com.h"
+#import "UIButton+Com.h"
+
 #import "NSString+Com.h"
 
 #import "EFBaseViewController.h"

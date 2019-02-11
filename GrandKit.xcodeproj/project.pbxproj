@@ -14,6 +14,7 @@
 		203673A422042C4E009DF23A /* SSZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = 203673A322042C4D009DF23A /* SSZipArchive.m */; };
 		203673AA22043FE9009DF23A /* GKPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 203673A922043FE9009DF23A /* GKPoint.m */; };
 		203673AE22044007009DF23A /* GKGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 203673AD22044007009DF23A /* GKGroup.m */; };
+		2049E18D220578F3005F127E /* GKURLSessionDeligateDownloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2049E18C220578F3005F127E /* GKURLSessionDeligateDownloadViewController.m */; };
 		20560E8A21F9693A000B927F /* GKURLConnectionDownloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20560E8921F9693A000B927F /* GKURLConnectionDownloadViewController.m */; };
 		20560E8D21F9B18E000B927F /* GKURLConnectionDeligateDownloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20560E8C21F9B18E000B927F /* GKURLConnectionDeligateDownloadViewController.m */; };
 		20560E9F21FC0613000B927F /* GKURLConnectionDeligateDownload2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20560E9E21FC0613000B927F /* GKURLConnectionDeligateDownload2ViewController.m */; };
@@ -33,6 +34,9 @@
 		207880AA21F570A90030D4F5 /* GKSocketChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 207880A921F570A90030D4F5 /* GKSocketChatViewController.m */; };
 		207880B021F5920E0030D4F5 /* NSString+Com.m in Sources */ = {isa = PBXBuildFile; fileRef = 207880AF21F5920E0030D4F5 /* NSString+Com.m */; };
 		2096F2B721F88388008DC254 /* GKSocketHttpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2096F2B621F88388008DC254 /* GKSocketHttpViewController.m */; };
+		20CFE5262211292400B9C132 /* RainbowProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CFE5252211292400B9C132 /* RainbowProgress.m */; };
+		20CFE52A22113F7600B9C132 /* GKURLSessionDeligateDownloadResumeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CFE52922113F7600B9C132 /* GKURLSessionDeligateDownloadResumeViewController.m */; };
+		20CFE52D2211430700B9C132 /* UIButton+Com.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CFE52C2211430700B9C132 /* UIButton+Com.m */; };
 		20E020362202E82A0037BE1F /* GKURLSessionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E020352202E82A0037BE1F /* GKURLSessionViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +56,8 @@
 		203673A922043FE9009DF23A /* GKPoint.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GKPoint.m; sourceTree = "<group>"; };
 		203673AC22044007009DF23A /* GKGroup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GKGroup.h; sourceTree = "<group>"; };
 		203673AD22044007009DF23A /* GKGroup.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GKGroup.m; sourceTree = "<group>"; };
+		2049E18B220578F3005F127E /* GKURLSessionDeligateDownloadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GKURLSessionDeligateDownloadViewController.h; sourceTree = "<group>"; };
+		2049E18C220578F3005F127E /* GKURLSessionDeligateDownloadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GKURLSessionDeligateDownloadViewController.m; sourceTree = "<group>"; };
 		20560E8821F9693A000B927F /* GKURLConnectionDownloadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GKURLConnectionDownloadViewController.h; sourceTree = "<group>"; };
 		20560E8921F9693A000B927F /* GKURLConnectionDownloadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GKURLConnectionDownloadViewController.m; sourceTree = "<group>"; };
 		20560E8B21F9B18E000B927F /* GKURLConnectionDeligateDownloadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GKURLConnectionDeligateDownloadViewController.h; sourceTree = "<group>"; };
@@ -91,6 +97,12 @@
 		207880AF21F5920E0030D4F5 /* NSString+Com.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Com.m"; sourceTree = "<group>"; };
 		2096F2B521F88388008DC254 /* GKSocketHttpViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GKSocketHttpViewController.h; sourceTree = "<group>"; };
 		2096F2B621F88388008DC254 /* GKSocketHttpViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GKSocketHttpViewController.m; sourceTree = "<group>"; };
+		20CFE5242211292400B9C132 /* RainbowProgress.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RainbowProgress.h; sourceTree = "<group>"; };
+		20CFE5252211292400B9C132 /* RainbowProgress.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RainbowProgress.m; sourceTree = "<group>"; };
+		20CFE52822113F7600B9C132 /* GKURLSessionDeligateDownloadResumeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GKURLSessionDeligateDownloadResumeViewController.h; sourceTree = "<group>"; };
+		20CFE52922113F7600B9C132 /* GKURLSessionDeligateDownloadResumeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GKURLSessionDeligateDownloadResumeViewController.m; sourceTree = "<group>"; };
+		20CFE52B2211430700B9C132 /* UIButton+Com.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+Com.h"; sourceTree = "<group>"; };
+		20CFE52C2211430700B9C132 /* UIButton+Com.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Com.m"; sourceTree = "<group>"; };
 		20E020342202E82A0037BE1F /* GKURLSessionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GKURLSessionViewController.h; sourceTree = "<group>"; };
 		20E020352202E82A0037BE1F /* GKURLSessionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GKURLSessionViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -156,6 +168,10 @@
 				20560EA121FC0C3A000B927F /* GKURLConnectionDeligateDownload3ViewController.m */,
 				20E020342202E82A0037BE1F /* GKURLSessionViewController.h */,
 				20E020352202E82A0037BE1F /* GKURLSessionViewController.m */,
+				2049E18B220578F3005F127E /* GKURLSessionDeligateDownloadViewController.h */,
+				2049E18C220578F3005F127E /* GKURLSessionDeligateDownloadViewController.m */,
+				20CFE52822113F7600B9C132 /* GKURLSessionDeligateDownloadResumeViewController.h */,
+				20CFE52922113F7600B9C132 /* GKURLSessionDeligateDownloadResumeViewController.m */,
 			);
 			path = Http;
 			sourceTree = "<group>";
@@ -179,12 +195,13 @@
 		206C3F1721F181F30000F116 /* GrandKit */ = {
 			isa = PBXGroup;
 			children = (
-				2036739422042C35009DF23A /* SSZipArchive */,
+				206C3F3121F1A5A00000F116 /* Base */,
+				206C3F3221F1AAE90000F116 /* Main */,
+				20CFE521221128DE00B9C132 /* UI */,
 				20560E8721F968F6000B927F /* Http */,
 				206C3F4021F2CDE30000F116 /* Socket */,
-				206C3F3221F1AAE90000F116 /* Main */,
-				206C3F3121F1A5A00000F116 /* Base */,
 				206C3F3C21F1B7ED0000F116 /* Categary */,
+				20CFE5272211297200B9C132 /* Util */,
 				206C3F2E21F182840000F116 /* Supporting Files */,
 				206C3F5321F3069A0000F116 /* note */,
 			);
@@ -239,6 +256,8 @@
 				206C3F5121F304C80000F116 /* UIFont+Com.m */,
 				207880AE21F5920E0030D4F5 /* NSString+Com.h */,
 				207880AF21F5920E0030D4F5 /* NSString+Com.m */,
+				20CFE52B2211430700B9C132 /* UIButton+Com.h */,
+				20CFE52C2211430700B9C132 /* UIButton+Com.m */,
 			);
 			path = Categary;
 			sourceTree = "<group>";
@@ -254,6 +273,39 @@
 				2096F2B621F88388008DC254 /* GKSocketHttpViewController.m */,
 			);
 			path = Socket;
+			sourceTree = "<group>";
+		};
+		20CFE521221128DE00B9C132 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				20CFE522221128E600B9C132 /* Progress */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		20CFE522221128E600B9C132 /* Progress */ = {
+			isa = PBXGroup;
+			children = (
+				20CFE523221128EF00B9C132 /* RainbowProgress */,
+			);
+			path = Progress;
+			sourceTree = "<group>";
+		};
+		20CFE523221128EF00B9C132 /* RainbowProgress */ = {
+			isa = PBXGroup;
+			children = (
+				20CFE5242211292400B9C132 /* RainbowProgress.h */,
+				20CFE5252211292400B9C132 /* RainbowProgress.m */,
+			);
+			path = RainbowProgress;
+			sourceTree = "<group>";
+		};
+		20CFE5272211297200B9C132 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				2036739422042C35009DF23A /* SSZipArchive */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -327,9 +379,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				2096F2B721F88388008DC254 /* GKSocketHttpViewController.m in Sources */,
+				20CFE52A22113F7600B9C132 /* GKURLSessionDeligateDownloadResumeViewController.m in Sources */,
 				206C3F1D21F181F30000F116 /* GKMainViewController.m in Sources */,
 				20560EA221FC0C3A000B927F /* GKURLConnectionDeligateDownload3ViewController.m in Sources */,
 				203673AA22043FE9009DF23A /* GKPoint.m in Sources */,
+				20CFE52D2211430700B9C132 /* UIButton+Com.m in Sources */,
+				2049E18D220578F3005F127E /* GKURLSessionDeligateDownloadViewController.m in Sources */,
 				206C3F5721F307F40000F116 /* EFBaseViewController.m in Sources */,
 				2036739E22042C43009DF23A /* unzip.c in Sources */,
 				207880B021F5920E0030D4F5 /* NSString+Com.m in Sources */,
@@ -350,6 +405,7 @@
 				2036739F22042C43009DF23A /* zip.c in Sources */,
 				206C3F3F21F1B8480000F116 /* UILabel+Manage.m in Sources */,
 				20560E8D21F9B18E000B927F /* GKURLConnectionDeligateDownloadViewController.m in Sources */,
+				20CFE5262211292400B9C132 /* RainbowProgress.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
