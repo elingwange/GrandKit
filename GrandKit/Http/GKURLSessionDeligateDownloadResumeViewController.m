@@ -15,6 +15,11 @@
 @property (nonatomic, strong) NSURLSessionDownloadTask *downloadTask;
 /* 下载暂停时的续传状态数据 */
 @property (nonatomic, strong) NSData *resumeData;
+/*
+ - 所有任务是被Session发起的，任务一旦发起，Session会对任务进行强引用
+ - 任务被取消，session不再进行强引用；在ARC中，如果没有对象对一个对象进行强引用，此对象会被立即释放
+ */
+//@property (nonatomic, weak) NSData *resumeData;
 
 /** 彩虹进度条 */
 @property (nonatomic, strong) RainbowProgress *progress;
@@ -35,7 +40,13 @@
         // NSURLSessionConfiguration 提供了一个全局的网络环境配置，包括Cookie，客户端信息，身份验证，缓存，超时时长等
         // 一旦设置可以全局共享，替代NSURLRequest中的配置信息
         NSURLSessionConfiguration *config = [NSURLSessionConfiguration defaultSessionConfiguration];
-        _session = [NSURLSession sessionWithConfiguration:config delegate:self delegateQueue:[NSOperationQueue mainQueue]];
+        /**
+         下载本身是异步的，由NSURLSession统一调度执行
+         delegateQueue 代理运行队列——当网络事件需要监听的时候，执行方法所在的队列，不会影响到异步性
+         - [NSOperationQueue mainQueue] 代理在主队列中运行
+         - nil 和 [[NSOperationQueue alloc]init] 一样。如果只是希望代理异步执行，传入 nil 就可以
+         */
+        _session = [NSURLSession sessionWithConfiguration:config delegate:self delegateQueue:nil];
     }
     return _session;
 }
@@ -43,7 +54,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.title = @"NSURLSession Deligate";
+    self.title = @"NSURLSession Deligate Resume";
     
     [self buildUI];
 }
@@ -67,6 +78,24 @@
     self.btnResume = [UIButton initWithFrame:CGRectMake(PADDING, Size(210), Width - PADDING * 2, COMMON_HEIGHT) title:@"Resume"];
     [self.view addSubview:self.btnResume];
     [self.btnResume addTarget:self action:@selector(onResume) forControlEvents:UIControlEventTouchUpInside];
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    
+    /*
+     Session 和 VC 循环引用的问题
+     
+     
+     */
+    // 将 session 设为已完成
+    // 已完成状态的session，无法再次使用
+    [self.session finishTasksAndInvalidate];
+    // 清空session
+    self.session = nil;
+}
+
+- (void)dealloc {
+    NSLog(@"ViewController 已释放");
 }
 
 - (void)onStart {
@@ -110,8 +139,6 @@
     NSLog(@"完成 %@", location);
     
     [self.progress stopAnimating];
-    
-    self.resumeData = nil;
 }
 
 /**
@@ -128,7 +155,10 @@
     float progress = (float) totalBytesWritten / totalBytesExpectedToWrite;
     NSLog(@"%f", progress);
     
-    self.progress.progressValue = progress;
+    dispatch_sync(dispatch_get_main_queue(), ^{
+        
+        self.progress.progressValue = progress;
+    });
 }
 
 /*
