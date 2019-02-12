@@ -14,11 +14,32 @@ NS_ASSUME_NONNULL_BEGIN
 // 定义 Block 的方式:
 typedef void(^SuccessBlock)(NSData *data, NSURLResponse *response);
 typedef void(^FailBlock)(NSError *error);
+typedef void(^SuccessJson)(id responseObject, NSURLResponse *response);
 
 @interface EFNetworkTool : NSObject
 
 // 获取单例的方法
 + (instancetype)sharedNetworkTool;
+
+
+/**
+ *  直接封装(多文件+文本信息)上传
+ *
+ *  @param urlString  接口
+ *  @param fileDict   文件字典
+ *  @param fileKey    服务器接受文件的key值
+ *  @param paramaters 普通文本信息字典
+ *  @param success    成功之后的回调
+ *  @param fail       失败之后的回调
+ *
+ *  本方法默认处理服务器返回的JSON数据(自动解析JSON数据)
+ */
+- (void)PostFileAndMsgWithUrlString:(NSString *)urlString
+                           FileDict:(NSDictionary *)fileDict
+                            fileKey:(NSString *)fileKey
+                          paramater:(NSDictionary *)paramaters
+                            success:(SuccessJson)success
+                               fail:(FailBlock)fail;
 
 // urlString :post 请求的接口
 // 上传给服务器的参数,用字典包装
@@ -60,6 +81,19 @@ typedef void(^FailBlock)(NSError *error);
 - (NSData *)getHttpBodyWithFilePath:(NSString *)filePath
                             FileKey:(NSString *)fileKey
                            FileName:(NSString *)fileName;
+
+/**
+ *  多文件上传+普通文本信息 格式封装
+ *
+ *  @param fileDict   文件字典: key(文件在服务器保存的名称)=value(文件路径)
+ *  @param fileKey    服务器接受文件信息的key值
+ *  @param paramaters 普通参数字典: key(服务器接受普通文本信息的key)=value(对应的文本信息)
+ *
+ *  @return 封装好的二进制数据(请求体)
+ */
+- (NSData *)getHttpBodyWithFileDict:(NSDictionary *)fileDict
+                            fileKey:(NSString *)fileKey
+                          paramater:(NSDictionary *)paramaters;
 
 /**
  *  根据文件路径获取文件信息

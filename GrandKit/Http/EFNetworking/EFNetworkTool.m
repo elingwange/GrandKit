@@ -29,6 +29,62 @@
     return _instance;
 }
 
+/**
+ *  直接封装(多文件+文本信息)上传
+ *
+ *  @param urlString  接口
+ *  @param fileDict   文件字典
+ *  @param fileKey    服务器接受文件的key值
+ *  @param paramaters 普通文本信息字典
+ *  @param success    成功之后的回调
+ *  @param fail       失败之后的回调
+ *
+ *  本方法默认处理服务器返回的JSON数据(自动解析JSON数据)
+ */
+- (void)PostFileAndMsgWithUrlString:(NSString *)urlString
+                           FileDict:(NSDictionary *)fileDict
+                            fileKey:(NSString *)fileKey
+                          paramater:(NSDictionary *)paramaters
+                            success:(SuccessJson)success
+                               fail:(FailBlock)fail {
+    
+    // 1. 创建请求
+    NSURL *url = [NSURL URLWithString:urlString];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
+    
+    // 设置请求方法
+    request.HTTPMethod = @"POST";
+    
+    // 设置请求头,告诉服务器本次长传的时文件信息
+    NSString *contentType = [NSString stringWithFormat:@"multipart/form-data; boundary=%@",kBounary];
+    [request setValue:contentType forHTTPHeaderField:@"Content-Type"];
+    
+    request.HTTPBody = [self getHttpBodyWithFileDict:fileDict fileKey:fileKey paramater:paramaters];
+    
+    // 2. 发送请求
+    [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
+        
+        // 如果请求成功,调用成功的回调!
+        if (data && !connectionError) {
+            
+            if (success) {
+                
+                // JSON --> OC  解析JSON 数据
+                id obj = [NSJSONSerialization JSONObjectWithData:data options:0 error:NULL];
+                
+                // 成功回调
+                success(obj,response);
+            }else
+            {
+                if (fail) {
+                    // 失败回调
+                    fail(connectionError);
+                }
+            }
+        }
+    }];
+}
+
 // 对外提供的 POST 请求,应该给外界一个 Block 让外界自己选择 成功或者失败之后的操作!
 - (void)PostUrlString:(NSString *)urlString
             paramater:(NSDictionary *)paramater
@@ -194,6 +250,75 @@
     
     return data;
 }
+                  
+                  
+/**
+ *  多文件上传+普通文本信息 格式封装
+ *
+ *  @param fileDict   文件字典: key(文件在服务器保存的名称)=value(文件路径)
+ *  @param fileKey    服务器接受文件信息的key值
+ *  @param paramaters 普通参数字典: key(服务器接受普通文本信息的key)=value(对应的文本信息)
+ *
+ *  @return 封装好的二进制数据(请求体)
+ */
+- (NSData *)getHttpBodyWithFileDict:(NSDictionary *)fileDict
+                              fileKey:(NSString *)fileKey
+                            paramater:(NSDictionary *)paramaters {
+
+    NSMutableData *data = [NSMutableData data];
+    
+    // 遍历文件参数字典,设置文件的格式(会将所上传的文件数据格式封装起来)
+    [fileDict enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
+        // 取出每一条字典数据: fileName : 服务器保存的名称 , filePath: 文件路径
+        NSString *fileName = key;
+        NSString *filePath = obj;
+        
+        // 1.第一个文件的上边界
+        NSMutableString *headerStrM = [NSMutableString stringWithFormat:@"\r\n--%@\r\n",kBounary];
+        
+        // "userfile[]" 服务器接受文件的 key 值
+        // "ARRAYJSON"  服务器保存的文件名
+        [headerStrM appendFormat:@"Content-Disposition: form-data; name=%@; filename=%@\r\n",fileKey,fileName];
+        
+        NSURLResponse *response = [self getFileTypeWithFilepath:filePath];
+        
+        // 文件类型
+        [headerStrM appendFormat:@"Content-Type: %@\r\n\r\n",response.MIMEType];
+        
+        // 将文件的上边界添加到请求体中!
+        [data appendData:[headerStrM dataUsingEncoding:NSUTF8StringEncoding]];
+        
+        // 将文件内容添加到请求体中
+        [data appendData:[NSData dataWithContentsOfFile:filePath]];
+        
+    }];
+    
+    // 遍历普通参数字典
+    [paramaters enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
+        
+        // msgKey :服务器接受参数的key值 msgValue:上传的文本参数
+        NSString *msgKey = key;
+        NSString *msgValue = obj;
+        
+        // 普通文本信息上边界
+        NSMutableString *headerStrM = [NSMutableString stringWithFormat:@"\r\n--%@\r\n",kBounary];
+        // "username": 服务器接受普通文本参数的key值.后端人员告诉我们的!
+        [headerStrM appendFormat:@"Content-Disposition: form-data; name=%@\r\n\r\n",msgKey];
+        
+        [data appendData:[headerStrM dataUsingEncoding:NSUTF8StringEncoding]];
+        
+        // 普通文本信息;
+        [data appendData:[msgValue dataUsingEncoding:NSUTF8StringEncoding]];
+        
+    }];
+    
+    // 3. 下边界 (只添加一次)
+    NSMutableString *footerStrM = [NSMutableString stringWithFormat:@"\r\n--%@--\r\n",kBounary];
+    [data appendData:[footerStrM dataUsingEncoding:NSUTF8StringEncoding]];
+    
+    return data;
+}
+                  
 
 // 动态获取文件类型!
 - (NSURLResponse *)getFileTypeWithFilepath:(NSString *)filePath {
