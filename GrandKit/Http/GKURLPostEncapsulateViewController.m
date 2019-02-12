@@ -30,11 +30,18 @@
     GKNetworkTool *tool = [GKNetworkTool sharedNetworkTool];
     
     // 2. 发送网络请求
-    [tool PostUrlString:@"http://localhost/login/login.php" paramater:@{@"username":@"zhangsan",@"password":@"zhang"} completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+    [tool PostUrlString:@"http://127.0.0.1/login/login.php"
+              paramater:@{@"username":@"zhangsan",@"password":@"zhang"}
+                success:^(NSData *data, NSURLResponse *response) {
         
-        //
-        NSLog(@"%@",[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding]);
-    }];
+                    NSLog(@"%@",[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding]);
+                    
+                    NSLog(@"网络请求成功,处理数据!");
+                }
+                   fail:^(NSError *error) {
+                    
+                    NSLog(@"网络请求失败,错误处理!");
+                }];
 }
 
 @end

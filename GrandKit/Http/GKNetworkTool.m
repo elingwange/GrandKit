@@ -13,7 +13,8 @@
 // 对外提供的 POST 请求,应该给外界一个 Block 让外界自己选择 成功或者失败之后的操作!
 - (void)PostUrlString:(NSString *)urlString
             paramater:(NSDictionary *)paramater
-    completionHandler:(void (^)(NSData *data, NSURLResponse *response, NSError *error))completionHandler {
+              success:(SuccessBlock)SuccessBlock
+                 fail:(FailBlock)failBlock {
     
     // 1.创建请求 (POST请求)
     NSURL *url = [NSURL URLWithString:urlString];
@@ -32,14 +33,14 @@
         NSString *nameKey = key;
         NSString *nameValue = obj;
         
-        [strM appendString:[NSString stringWithFormat:@"%@=%@&", nameKey, nameValue]];
+        [strM appendString:[NSString stringWithFormat:@"%@=%@&",nameKey,nameValue]];
         
     }];
     
     // 处理字符串,去掉最后一个字符!
+    strM = [strM substringToIndex:(strM.length - 1)];
     
-    NSLog(@"strM:%@", strM);
-    
+    NSLog(@"strM:%@",strM);
     
     // 设置请求体:
     request.HTTPBody = [strM dataUsingEncoding:NSUTF8StringEncoding];
@@ -49,8 +50,22 @@
     // 2. 发送请求
     [[[NSURLSession sharedSession] dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
         
-        // 执行完成之后的回调(模仿系统)
-        completionHandler(data, response, error);
+        // 成功:
+        if (data && !error) { //没有错误,并且有数据返回!
+            
+            // 成功执行,执行成功的Block 回调!
+            if (SuccessBlock) {
+                // 执行 Block
+                SuccessBlock(data,response);
+            }
+            
+        } else { // 网路请求失败
+        
+            if (failBlock) {
+                // 失败之后的回调!
+                failBlock(error);
+            }
+        }
         
     }] resume];
 }
