@@ -85,7 +85,7 @@
     
     GKPoint *point41 = [GKPoint initWithName:@"Get" andClass:@"GKURLGetViewController"];
     GKPoint *point42 = [GKPoint initWithName:@"Post" andClass:@"GKURLPostViewController"];
-    GKPoint *point43 = [GKPoint initWithName:@"Post Encapsulate" andClass:@"GKURLPostEncapsulateViewController"];
+    GKPoint *point43 = [GKPoint initWithName:@"Post Upload" andClass:@"GKURLPostUploadViewController"];
     GKGroup *group4 = [GKGroup initWithName:@"HTTP" andDetail:@"" andPoints:[NSMutableArray arrayWithObjects:point41, point42, point43, nil]];
     [_groupArray addObject:group4];
 }

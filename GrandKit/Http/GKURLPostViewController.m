@@ -7,6 +7,7 @@
 //
 
 #import "GKURLPostViewController.h"
+#import "EFNetworkTool.h"
 
 @interface GKURLPostViewController ()
 
@@ -24,6 +25,14 @@
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     NSLog(@"touchesBegan");
     
+    // 普通Post请求
+    [self common];
+    
+    // 封装后的Post请求
+//    [self encapsulate];
+}
+
+- (void)common {
     
     // 1. 创建请求:由于 POST 请求需要手动指定 http 的请求方法为 POST ,所以只能用 可变请求!
     
@@ -52,7 +61,26 @@
         NSLog(@"data:%@", [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding]);
         
     }] resume];
+}
+
+- (void)encapsulate {
     
+    // 1.实例化网络工具类单例
+    EFNetworkTool *tool = [EFNetworkTool sharedNetworkTool];
+    
+    // 2. 发送网络请求
+    [tool PostUrlString:@"http://127.0.0.1/login/login.php"
+              paramater:@{@"username":@"zhangsan",@"password":@"zhang"}
+                success:^(NSData *data, NSURLResponse *response) {
+                    
+                    NSLog(@"%@",[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding]);
+                    
+                    NSLog(@"网络请求成功,处理数据!");
+                }
+                   fail:^(NSError *error) {
+                       
+                       NSLog(@"网络请求失败,错误处理!");
+                   }];
 }
 
 @end

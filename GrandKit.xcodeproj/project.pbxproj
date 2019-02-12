@@ -39,8 +39,8 @@
 		20CFE52D2211430700B9C132 /* UIButton+Com.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CFE52C2211430700B9C132 /* UIButton+Com.m */; };
 		20CFE530221259BC00B9C132 /* GKURLPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CFE52F221259BC00B9C132 /* GKURLPostViewController.m */; };
 		20CFE5332212637300B9C132 /* GKURLGetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CFE5322212637300B9C132 /* GKURLGetViewController.m */; };
-		20CFE536221264FC00B9C132 /* GKURLPostEncapsulateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CFE535221264FC00B9C132 /* GKURLPostEncapsulateViewController.m */; };
-		20CFE5392212663E00B9C132 /* GKNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CFE5382212663E00B9C132 /* GKNetworkTool.m */; };
+		20CFE536221264FC00B9C132 /* GKURLPostUploadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CFE535221264FC00B9C132 /* GKURLPostUploadViewController.m */; };
+		20CFE5392212663E00B9C132 /* EFNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CFE5382212663E00B9C132 /* EFNetworkTool.m */; };
 		20E020362202E82A0037BE1F /* GKURLSessionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E020352202E82A0037BE1F /* GKURLSessionViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -111,10 +111,10 @@
 		20CFE52F221259BC00B9C132 /* GKURLPostViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GKURLPostViewController.m; sourceTree = "<group>"; };
 		20CFE5312212637300B9C132 /* GKURLGetViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GKURLGetViewController.h; sourceTree = "<group>"; };
 		20CFE5322212637300B9C132 /* GKURLGetViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GKURLGetViewController.m; sourceTree = "<group>"; };
-		20CFE534221264FC00B9C132 /* GKURLPostEncapsulateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GKURLPostEncapsulateViewController.h; sourceTree = "<group>"; };
-		20CFE535221264FC00B9C132 /* GKURLPostEncapsulateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GKURLPostEncapsulateViewController.m; sourceTree = "<group>"; };
-		20CFE5372212663E00B9C132 /* GKNetworkTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GKNetworkTool.h; sourceTree = "<group>"; };
-		20CFE5382212663E00B9C132 /* GKNetworkTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GKNetworkTool.m; sourceTree = "<group>"; };
+		20CFE534221264FC00B9C132 /* GKURLPostUploadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GKURLPostUploadViewController.h; sourceTree = "<group>"; };
+		20CFE535221264FC00B9C132 /* GKURLPostUploadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GKURLPostUploadViewController.m; sourceTree = "<group>"; };
+		20CFE5372212663E00B9C132 /* EFNetworkTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EFNetworkTool.h; sourceTree = "<group>"; };
+		20CFE5382212663E00B9C132 /* EFNetworkTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EFNetworkTool.m; sourceTree = "<group>"; };
 		20E020342202E82A0037BE1F /* GKURLSessionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GKURLSessionViewController.h; sourceTree = "<group>"; };
 		20E020352202E82A0037BE1F /* GKURLSessionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GKURLSessionViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -184,14 +184,13 @@
 				2049E18C220578F3005F127E /* GKURLSessionDeligateDownloadViewController.m */,
 				20CFE52822113F7600B9C132 /* GKURLSessionDeligateDownloadResumeViewController.h */,
 				20CFE52922113F7600B9C132 /* GKURLSessionDeligateDownloadResumeViewController.m */,
-				20CFE52E221259BC00B9C132 /* GKURLPostViewController.h */,
-				20CFE52F221259BC00B9C132 /* GKURLPostViewController.m */,
 				20CFE5312212637300B9C132 /* GKURLGetViewController.h */,
 				20CFE5322212637300B9C132 /* GKURLGetViewController.m */,
-				20CFE534221264FC00B9C132 /* GKURLPostEncapsulateViewController.h */,
-				20CFE535221264FC00B9C132 /* GKURLPostEncapsulateViewController.m */,
-				20CFE5372212663E00B9C132 /* GKNetworkTool.h */,
-				20CFE5382212663E00B9C132 /* GKNetworkTool.m */,
+				20CFE52E221259BC00B9C132 /* GKURLPostViewController.h */,
+				20CFE52F221259BC00B9C132 /* GKURLPostViewController.m */,
+				20CFE534221264FC00B9C132 /* GKURLPostUploadViewController.h */,
+				20CFE535221264FC00B9C132 /* GKURLPostUploadViewController.m */,
+				20CFE53A22129F9400B9C132 /* EFNetworking */,
 			);
 			path = Http;
 			sourceTree = "<group>";
@@ -328,6 +327,15 @@
 			path = Util;
 			sourceTree = "<group>";
 		};
+		20CFE53A22129F9400B9C132 /* EFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				20CFE5372212663E00B9C132 /* EFNetworkTool.h */,
+				20CFE5382212663E00B9C132 /* EFNetworkTool.m */,
+			);
+			path = EFNetworking;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -402,7 +410,7 @@
 				20CFE52A22113F7600B9C132 /* GKURLSessionDeligateDownloadResumeViewController.m in Sources */,
 				206C3F1D21F181F30000F116 /* GKMainViewController.m in Sources */,
 				20560EA221FC0C3A000B927F /* GKURLConnectionDeligateDownload3ViewController.m in Sources */,
-				20CFE5392212663E00B9C132 /* GKNetworkTool.m in Sources */,
+				20CFE5392212663E00B9C132 /* EFNetworkTool.m in Sources */,
 				203673AA22043FE9009DF23A /* GKPoint.m in Sources */,
 				20CFE52D2211430700B9C132 /* UIButton+Com.m in Sources */,
 				2049E18D220578F3005F127E /* GKURLSessionDeligateDownloadViewController.m in Sources */,
@@ -428,7 +436,7 @@
 				2036739F22042C43009DF23A /* zip.c in Sources */,
 				206C3F3F21F1B8480000F116 /* UILabel+Manage.m in Sources */,
 				20560E8D21F9B18E000B927F /* GKURLConnectionDeligateDownloadViewController.m in Sources */,
-				20CFE536221264FC00B9C132 /* GKURLPostEncapsulateViewController.m in Sources */,
+				20CFE536221264FC00B9C132 /* GKURLPostUploadViewController.m in Sources */,
 				20CFE5262211292400B9C132 /* RainbowProgress.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
