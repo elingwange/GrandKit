@@ -6,13 +6,13 @@
 //  Copyright © 2019 Evan Fang. All rights reserved.
 //
 
-#import "GKURLGetViewController.h"
+#import "GKHttpGetViewController.h"
 
-@interface GKURLGetViewController ()
+@interface GKHttpGetViewController ()
 
 @end
 
-@implementation GKURLGetViewController
+@implementation GKHttpGetViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

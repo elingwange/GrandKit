@@ -113,7 +113,9 @@
     }];
     
     // 处理字符串,去掉最后一个字符!
-    strM = [strM substringToIndex:(strM.length - 1)];
+    NSString *str = [strM substringToIndex:(strM.length - 1)];
+    // 替换字符串
+    [strM setString:str];
     
     NSLog(@"strM:%@",strM);
     

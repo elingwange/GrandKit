@@ -83,10 +83,11 @@
     GKGroup *group3 = [GKGroup initWithName:@"NSURLSession" andDetail:@"" andPoints:[NSMutableArray arrayWithObjects:point31, point32, point33, nil]];
     [_groupArray addObject:group3];
     
-    GKPoint *point41 = [GKPoint initWithName:@"Get" andClass:@"GKURLGetViewController"];
-    GKPoint *point42 = [GKPoint initWithName:@"Post" andClass:@"GKURLPostViewController"];
-    GKPoint *point43 = [GKPoint initWithName:@"Post Upload" andClass:@"GKURLPostUploadViewController"];
-    GKGroup *group4 = [GKGroup initWithName:@"HTTP" andDetail:@"" andPoints:[NSMutableArray arrayWithObjects:point41, point42, point43, nil]];
+    GKPoint *point41 = [GKPoint initWithName:@"Get" andClass:@"GKHttpGetViewController"];
+    GKPoint *point42 = [GKPoint initWithName:@"Post" andClass:@"GKHttpPostViewController"];
+    GKPoint *point43 = [GKPoint initWithName:@"Upload" andClass:@"GKHttpUploadViewController"];
+    GKPoint *point44 = [GKPoint initWithName:@"Upload AFN" andClass:@"GKAFNUploadViewController"];
+    GKGroup *group4 = [GKGroup initWithName:@"HTTP" andDetail:@"" andPoints:[NSMutableArray arrayWithObjects:point41, point42, point43, point44, nil]];
     [_groupArray addObject:group4];
 }
 

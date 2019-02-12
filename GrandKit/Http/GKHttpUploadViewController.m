@@ -6,19 +6,19 @@
 //  Copyright © 2019 Evan Fang. All rights reserved.
 //
 
-#import "GKURLPostUploadViewController.h"
+#import "GKHttpUploadViewController.h"
 #import "EFNetworkTool.h"
 
-@interface GKURLPostUploadViewController ()
+@interface GKHttpUploadViewController ()
 
 @end
 
-@implementation GKURLPostUploadViewController
+@implementation GKHttpUploadViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.title = @"Http Post Block";
+    self.title = @"Http Upload";
 }
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {

@@ -37,10 +37,20 @@
 		20CFE5262211292400B9C132 /* RainbowProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CFE5252211292400B9C132 /* RainbowProgress.m */; };
 		20CFE52A22113F7600B9C132 /* GKURLSessionDeligateDownloadResumeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CFE52922113F7600B9C132 /* GKURLSessionDeligateDownloadResumeViewController.m */; };
 		20CFE52D2211430700B9C132 /* UIButton+Com.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CFE52C2211430700B9C132 /* UIButton+Com.m */; };
-		20CFE530221259BC00B9C132 /* GKURLPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CFE52F221259BC00B9C132 /* GKURLPostViewController.m */; };
-		20CFE5332212637300B9C132 /* GKURLGetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CFE5322212637300B9C132 /* GKURLGetViewController.m */; };
-		20CFE536221264FC00B9C132 /* GKURLPostUploadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CFE535221264FC00B9C132 /* GKURLPostUploadViewController.m */; };
+		20CFE530221259BC00B9C132 /* GKHttpPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CFE52F221259BC00B9C132 /* GKHttpPostViewController.m */; };
+		20CFE5332212637300B9C132 /* GKHttpGetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CFE5322212637300B9C132 /* GKHttpGetViewController.m */; };
+		20CFE536221264FC00B9C132 /* GKHttpUploadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CFE535221264FC00B9C132 /* GKHttpUploadViewController.m */; };
 		20CFE5392212663E00B9C132 /* EFNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CFE5382212663E00B9C132 /* EFNetworkTool.m */; };
+		20CFE54F2212BF1D00B9C132 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CFE5432212BF1D00B9C132 /* AFURLResponseSerialization.m */; };
+		20CFE5502212BF1D00B9C132 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CFE5442212BF1D00B9C132 /* AFHTTPSessionManager.m */; };
+		20CFE5512212BF1D00B9C132 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CFE5452212BF1D00B9C132 /* AFURLConnectionOperation.m */; };
+		20CFE5522212BF1D00B9C132 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CFE5472212BF1D00B9C132 /* AFURLSessionManager.m */; };
+		20CFE5532212BF1D00B9C132 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CFE5482212BF1D00B9C132 /* AFHTTPRequestOperationManager.m */; };
+		20CFE5542212BF1D00B9C132 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CFE5492212BF1D00B9C132 /* AFURLRequestSerialization.m */; };
+		20CFE5552212BF1D00B9C132 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CFE54A2212BF1D00B9C132 /* AFHTTPRequestOperation.m */; };
+		20CFE5562212BF1D00B9C132 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CFE54C2212BF1D00B9C132 /* AFNetworkReachabilityManager.m */; };
+		20CFE5572212BF1D00B9C132 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CFE54D2212BF1D00B9C132 /* AFSecurityPolicy.m */; };
+		20CFE55A2212C45F00B9C132 /* GKAFNUploadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CFE5592212C45F00B9C132 /* GKAFNUploadViewController.m */; };
 		20E020362202E82A0037BE1F /* GKURLSessionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E020352202E82A0037BE1F /* GKURLSessionViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -107,14 +117,35 @@
 		20CFE52922113F7600B9C132 /* GKURLSessionDeligateDownloadResumeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GKURLSessionDeligateDownloadResumeViewController.m; sourceTree = "<group>"; };
 		20CFE52B2211430700B9C132 /* UIButton+Com.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+Com.h"; sourceTree = "<group>"; };
 		20CFE52C2211430700B9C132 /* UIButton+Com.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Com.m"; sourceTree = "<group>"; };
-		20CFE52E221259BC00B9C132 /* GKURLPostViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GKURLPostViewController.h; sourceTree = "<group>"; };
-		20CFE52F221259BC00B9C132 /* GKURLPostViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GKURLPostViewController.m; sourceTree = "<group>"; };
-		20CFE5312212637300B9C132 /* GKURLGetViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GKURLGetViewController.h; sourceTree = "<group>"; };
-		20CFE5322212637300B9C132 /* GKURLGetViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GKURLGetViewController.m; sourceTree = "<group>"; };
-		20CFE534221264FC00B9C132 /* GKURLPostUploadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GKURLPostUploadViewController.h; sourceTree = "<group>"; };
-		20CFE535221264FC00B9C132 /* GKURLPostUploadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GKURLPostUploadViewController.m; sourceTree = "<group>"; };
+		20CFE52E221259BC00B9C132 /* GKHttpPostViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GKHttpPostViewController.h; sourceTree = "<group>"; };
+		20CFE52F221259BC00B9C132 /* GKHttpPostViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GKHttpPostViewController.m; sourceTree = "<group>"; };
+		20CFE5312212637300B9C132 /* GKHttpGetViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GKHttpGetViewController.h; sourceTree = "<group>"; };
+		20CFE5322212637300B9C132 /* GKHttpGetViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GKHttpGetViewController.m; sourceTree = "<group>"; };
+		20CFE534221264FC00B9C132 /* GKHttpUploadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GKHttpUploadViewController.h; sourceTree = "<group>"; };
+		20CFE535221264FC00B9C132 /* GKHttpUploadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GKHttpUploadViewController.m; sourceTree = "<group>"; };
 		20CFE5372212663E00B9C132 /* EFNetworkTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EFNetworkTool.h; sourceTree = "<group>"; };
 		20CFE5382212663E00B9C132 /* EFNetworkTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EFNetworkTool.m; sourceTree = "<group>"; };
+		20CFE53C2212BF1D00B9C132 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
+		20CFE53D2212BF1D00B9C132 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		20CFE53E2212BF1D00B9C132 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		20CFE53F2212BF1D00B9C132 /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
+		20CFE5402212BF1D00B9C132 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
+		20CFE5412212BF1D00B9C132 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		20CFE5422212BF1D00B9C132 /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		20CFE5432212BF1D00B9C132 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		20CFE5442212BF1D00B9C132 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		20CFE5452212BF1D00B9C132 /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		20CFE5462212BF1D00B9C132 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		20CFE5472212BF1D00B9C132 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		20CFE5482212BF1D00B9C132 /* AFHTTPRequestOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperationManager.m; sourceTree = "<group>"; };
+		20CFE5492212BF1D00B9C132 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		20CFE54A2212BF1D00B9C132 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		20CFE54B2212BF1D00B9C132 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		20CFE54C2212BF1D00B9C132 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		20CFE54D2212BF1D00B9C132 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
+		20CFE54E2212BF1D00B9C132 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		20CFE5582212C45F00B9C132 /* GKAFNUploadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GKAFNUploadViewController.h; sourceTree = "<group>"; };
+		20CFE5592212C45F00B9C132 /* GKAFNUploadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GKAFNUploadViewController.m; sourceTree = "<group>"; };
 		20E020342202E82A0037BE1F /* GKURLSessionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GKURLSessionViewController.h; sourceTree = "<group>"; };
 		20E020352202E82A0037BE1F /* GKURLSessionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GKURLSessionViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -170,6 +201,7 @@
 		20560E8721F968F6000B927F /* Http */ = {
 			isa = PBXGroup;
 			children = (
+				20CFE53A22129F9400B9C132 /* EFNetworking */,
 				20560E8821F9693A000B927F /* GKURLConnectionDownloadViewController.h */,
 				20560E8921F9693A000B927F /* GKURLConnectionDownloadViewController.m */,
 				20560E8B21F9B18E000B927F /* GKURLConnectionDeligateDownloadViewController.h */,
@@ -184,13 +216,14 @@
 				2049E18C220578F3005F127E /* GKURLSessionDeligateDownloadViewController.m */,
 				20CFE52822113F7600B9C132 /* GKURLSessionDeligateDownloadResumeViewController.h */,
 				20CFE52922113F7600B9C132 /* GKURLSessionDeligateDownloadResumeViewController.m */,
-				20CFE5312212637300B9C132 /* GKURLGetViewController.h */,
-				20CFE5322212637300B9C132 /* GKURLGetViewController.m */,
-				20CFE52E221259BC00B9C132 /* GKURLPostViewController.h */,
-				20CFE52F221259BC00B9C132 /* GKURLPostViewController.m */,
-				20CFE534221264FC00B9C132 /* GKURLPostUploadViewController.h */,
-				20CFE535221264FC00B9C132 /* GKURLPostUploadViewController.m */,
-				20CFE53A22129F9400B9C132 /* EFNetworking */,
+				20CFE5312212637300B9C132 /* GKHttpGetViewController.h */,
+				20CFE5322212637300B9C132 /* GKHttpGetViewController.m */,
+				20CFE52E221259BC00B9C132 /* GKHttpPostViewController.h */,
+				20CFE52F221259BC00B9C132 /* GKHttpPostViewController.m */,
+				20CFE534221264FC00B9C132 /* GKHttpUploadViewController.h */,
+				20CFE535221264FC00B9C132 /* GKHttpUploadViewController.m */,
+				20CFE5582212C45F00B9C132 /* GKAFNUploadViewController.h */,
+				20CFE5592212C45F00B9C132 /* GKAFNUploadViewController.m */,
 			);
 			path = Http;
 			sourceTree = "<group>";
@@ -220,7 +253,7 @@
 				20560E8721F968F6000B927F /* Http */,
 				206C3F4021F2CDE30000F116 /* Socket */,
 				206C3F3C21F1B7ED0000F116 /* Categary */,
-				20CFE5272211297200B9C132 /* Util */,
+				20CFE5272211297200B9C132 /* Lib */,
 				206C3F2E21F182840000F116 /* Supporting Files */,
 				206C3F5321F3069A0000F116 /* note */,
 			);
@@ -319,12 +352,13 @@
 			path = RainbowProgress;
 			sourceTree = "<group>";
 		};
-		20CFE5272211297200B9C132 /* Util */ = {
+		20CFE5272211297200B9C132 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				20CFE53B2212BF1D00B9C132 /* AFNetworking */,
 				2036739422042C35009DF23A /* SSZipArchive */,
 			);
-			path = Util;
+			path = Lib;
 			sourceTree = "<group>";
 		};
 		20CFE53A22129F9400B9C132 /* EFNetworking */ = {
@@ -334,6 +368,32 @@
 				20CFE5382212663E00B9C132 /* EFNetworkTool.m */,
 			);
 			path = EFNetworking;
+			sourceTree = "<group>";
+		};
+		20CFE53B2212BF1D00B9C132 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				20CFE53C2212BF1D00B9C132 /* AFSecurityPolicy.h */,
+				20CFE53D2212BF1D00B9C132 /* AFNetworkReachabilityManager.h */,
+				20CFE53E2212BF1D00B9C132 /* AFHTTPRequestOperation.h */,
+				20CFE53F2212BF1D00B9C132 /* AFHTTPRequestOperationManager.h */,
+				20CFE5402212BF1D00B9C132 /* AFURLSessionManager.h */,
+				20CFE5412212BF1D00B9C132 /* AFURLRequestSerialization.h */,
+				20CFE5422212BF1D00B9C132 /* AFURLConnectionOperation.h */,
+				20CFE5432212BF1D00B9C132 /* AFURLResponseSerialization.m */,
+				20CFE5442212BF1D00B9C132 /* AFHTTPSessionManager.m */,
+				20CFE5452212BF1D00B9C132 /* AFURLConnectionOperation.m */,
+				20CFE5462212BF1D00B9C132 /* AFURLResponseSerialization.h */,
+				20CFE5472212BF1D00B9C132 /* AFURLSessionManager.m */,
+				20CFE5482212BF1D00B9C132 /* AFHTTPRequestOperationManager.m */,
+				20CFE5492212BF1D00B9C132 /* AFURLRequestSerialization.m */,
+				20CFE54A2212BF1D00B9C132 /* AFHTTPRequestOperation.m */,
+				20CFE54B2212BF1D00B9C132 /* AFNetworking.h */,
+				20CFE54C2212BF1D00B9C132 /* AFNetworkReachabilityManager.m */,
+				20CFE54D2212BF1D00B9C132 /* AFSecurityPolicy.m */,
+				20CFE54E2212BF1D00B9C132 /* AFHTTPSessionManager.h */,
+			);
+			path = AFNetworking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -406,23 +466,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20CFE5572212BF1D00B9C132 /* AFSecurityPolicy.m in Sources */,
+				20CFE5552212BF1D00B9C132 /* AFHTTPRequestOperation.m in Sources */,
 				2096F2B721F88388008DC254 /* GKSocketHttpViewController.m in Sources */,
 				20CFE52A22113F7600B9C132 /* GKURLSessionDeligateDownloadResumeViewController.m in Sources */,
 				206C3F1D21F181F30000F116 /* GKMainViewController.m in Sources */,
 				20560EA221FC0C3A000B927F /* GKURLConnectionDeligateDownload3ViewController.m in Sources */,
+				20CFE54F2212BF1D00B9C132 /* AFURLResponseSerialization.m in Sources */,
 				20CFE5392212663E00B9C132 /* EFNetworkTool.m in Sources */,
 				203673AA22043FE9009DF23A /* GKPoint.m in Sources */,
 				20CFE52D2211430700B9C132 /* UIButton+Com.m in Sources */,
 				2049E18D220578F3005F127E /* GKURLSessionDeligateDownloadViewController.m in Sources */,
+				20CFE5522212BF1D00B9C132 /* AFURLSessionManager.m in Sources */,
 				206C3F5721F307F40000F116 /* EFBaseViewController.m in Sources */,
 				2036739E22042C43009DF23A /* unzip.c in Sources */,
-				20CFE5332212637300B9C132 /* GKURLGetViewController.m in Sources */,
+				20CFE5332212637300B9C132 /* GKHttpGetViewController.m in Sources */,
 				207880B021F5920E0030D4F5 /* NSString+Com.m in Sources */,
 				203673A022042C43009DF23A /* ioapi.c in Sources */,
-				20CFE530221259BC00B9C132 /* GKURLPostViewController.m in Sources */,
+				20CFE5512212BF1D00B9C132 /* AFURLConnectionOperation.m in Sources */,
+				20CFE530221259BC00B9C132 /* GKHttpPostViewController.m in Sources */,
+				20CFE5502212BF1D00B9C132 /* AFHTTPSessionManager.m in Sources */,
 				206C3F4C21F2F1D80000F116 /* UIImage+Com.m in Sources */,
 				20E020362202E82A0037BE1F /* GKURLSessionViewController.m in Sources */,
 				20560E8A21F9693A000B927F /* GKURLConnectionDownloadViewController.m in Sources */,
+				20CFE5562212BF1D00B9C132 /* AFNetworkReachabilityManager.m in Sources */,
 				20560E9F21FC0613000B927F /* GKURLConnectionDeligateDownload2ViewController.m in Sources */,
 				207880AA21F570A90030D4F5 /* GKSocketChatViewController.m in Sources */,
 				203673AE22044007009DF23A /* GKGroup.m in Sources */,
@@ -433,10 +500,13 @@
 				206C3F4321F2CE400000F116 /* GKSocketBaseViewController.m in Sources */,
 				206C3F1A21F181F30000F116 /* GKAppDelegate.m in Sources */,
 				203673A422042C4E009DF23A /* SSZipArchive.m in Sources */,
+				20CFE5542212BF1D00B9C132 /* AFURLRequestSerialization.m in Sources */,
+				20CFE5532212BF1D00B9C132 /* AFHTTPRequestOperationManager.m in Sources */,
 				2036739F22042C43009DF23A /* zip.c in Sources */,
 				206C3F3F21F1B8480000F116 /* UILabel+Manage.m in Sources */,
 				20560E8D21F9B18E000B927F /* GKURLConnectionDeligateDownloadViewController.m in Sources */,
-				20CFE536221264FC00B9C132 /* GKURLPostUploadViewController.m in Sources */,
+				20CFE55A2212C45F00B9C132 /* GKAFNUploadViewController.m in Sources */,
+				20CFE536221264FC00B9C132 /* GKHttpUploadViewController.m in Sources */,
 				20CFE5262211292400B9C132 /* RainbowProgress.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

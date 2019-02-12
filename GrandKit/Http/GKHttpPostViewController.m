@@ -6,14 +6,14 @@
 //  Copyright © 2019 Evan Fang. All rights reserved.
 //
 
-#import "GKURLPostViewController.h"
+#import "GKHttpPostViewController.h"
 #import "EFNetworkTool.h"
 
-@interface GKURLPostViewController ()
+@interface GKHttpPostViewController ()
 
 @end
 
-@implementation GKURLPostViewController
+@implementation GKHttpPostViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
