@@ -79,9 +79,15 @@
     
     GKPoint *point31 = [GKPoint initWithName:@"Base" andClass:@"GKURLSessionViewController"];
     GKPoint *point32 = [GKPoint initWithName:@"DownloadDelegate" andClass:@"GKURLSessionDeligateDownloadViewController"];
-    GKPoint *point33 = [GKPoint initWithName:@"DownloadDelegate 断点续传" andClass:@"GKURLSessionDeligateDownloadResumeViewController"];
+    GKPoint *point33 = [GKPoint initWithName:@"DownloadDelegate Resume" andClass:@"GKURLSessionDeligateDownloadResumeViewController"];
     GKGroup *group3 = [GKGroup initWithName:@"NSURLSession" andDetail:@"" andPoints:[NSMutableArray arrayWithObjects:point31, point32, point33, nil]];
     [_groupArray addObject:group3];
+    
+    GKPoint *point41 = [GKPoint initWithName:@"Get" andClass:@"GKURLGetViewController"];
+    GKPoint *point42 = [GKPoint initWithName:@"Post" andClass:@"GKURLPostViewController"];
+    GKPoint *point43 = [GKPoint initWithName:@"Post Encapsulate" andClass:@"GKURLPostEncapsulateViewController"];
+    GKGroup *group4 = [GKGroup initWithName:@"HTTP" andDetail:@"" andPoints:[NSMutableArray arrayWithObjects:point41, point42, point43, nil]];
+    [_groupArray addObject:group4];
 }
 
 #pragma mark - 数据源方法
