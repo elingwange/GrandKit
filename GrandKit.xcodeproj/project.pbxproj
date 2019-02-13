@@ -51,6 +51,8 @@
 		20CFE5562212BF1D00B9C132 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CFE54C2212BF1D00B9C132 /* AFNetworkReachabilityManager.m */; };
 		20CFE5572212BF1D00B9C132 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CFE54D2212BF1D00B9C132 /* AFSecurityPolicy.m */; };
 		20CFE55A2212C45F00B9C132 /* GKAFNUploadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CFE5592212C45F00B9C132 /* GKAFNUploadViewController.m */; };
+		20CFE55E2213B1B100B9C132 /* GKDelegateBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CFE55D2213B1B100B9C132 /* GKDelegateBaseViewController.m */; };
+		20CFE5622213B50300B9C132 /* MeatFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CFE5612213B50300B9C132 /* MeatFactory.m */; };
 		20E020362202E82A0037BE1F /* GKURLSessionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E020352202E82A0037BE1F /* GKURLSessionViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -146,6 +148,10 @@
 		20CFE54E2212BF1D00B9C132 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
 		20CFE5582212C45F00B9C132 /* GKAFNUploadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GKAFNUploadViewController.h; sourceTree = "<group>"; };
 		20CFE5592212C45F00B9C132 /* GKAFNUploadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GKAFNUploadViewController.m; sourceTree = "<group>"; };
+		20CFE55C2213B1B100B9C132 /* GKDelegateBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GKDelegateBaseViewController.h; sourceTree = "<group>"; };
+		20CFE55D2213B1B100B9C132 /* GKDelegateBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GKDelegateBaseViewController.m; sourceTree = "<group>"; };
+		20CFE5602213B50300B9C132 /* MeatFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MeatFactory.h; sourceTree = "<group>"; };
+		20CFE5612213B50300B9C132 /* MeatFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeatFactory.m; sourceTree = "<group>"; };
 		20E020342202E82A0037BE1F /* GKURLSessionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GKURLSessionViewController.h; sourceTree = "<group>"; };
 		20E020352202E82A0037BE1F /* GKURLSessionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GKURLSessionViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -247,6 +253,7 @@
 		206C3F1721F181F30000F116 /* GrandKit */ = {
 			isa = PBXGroup;
 			children = (
+				20CFE55B2213B17E00B9C132 /* Syntax */,
 				206C3F3121F1A5A00000F116 /* Base */,
 				206C3F3221F1AAE90000F116 /* Main */,
 				20CFE521221128DE00B9C132 /* UI */,
@@ -396,6 +403,25 @@
 			path = AFNetworking;
 			sourceTree = "<group>";
 		};
+		20CFE55B2213B17E00B9C132 /* Syntax */ = {
+			isa = PBXGroup;
+			children = (
+				20CFE55F2213B4DC00B9C132 /* Delegate */,
+			);
+			path = Syntax;
+			sourceTree = "<group>";
+		};
+		20CFE55F2213B4DC00B9C132 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				20CFE5602213B50300B9C132 /* MeatFactory.h */,
+				20CFE5612213B50300B9C132 /* MeatFactory.m */,
+				20CFE55C2213B1B100B9C132 /* GKDelegateBaseViewController.h */,
+				20CFE55D2213B1B100B9C132 /* GKDelegateBaseViewController.m */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -506,8 +532,10 @@
 				206C3F3F21F1B8480000F116 /* UILabel+Manage.m in Sources */,
 				20560E8D21F9B18E000B927F /* GKURLConnectionDeligateDownloadViewController.m in Sources */,
 				20CFE55A2212C45F00B9C132 /* GKAFNUploadViewController.m in Sources */,
+				20CFE55E2213B1B100B9C132 /* GKDelegateBaseViewController.m in Sources */,
 				20CFE536221264FC00B9C132 /* GKHttpUploadViewController.m in Sources */,
 				20CFE5262211292400B9C132 /* RainbowProgress.m in Sources */,
+				20CFE5622213B50300B9C132 /* MeatFactory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

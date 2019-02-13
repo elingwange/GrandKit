@@ -71,9 +71,9 @@
     [_groupArray addObject:group1];
     
     GKPoint *point21 = [GKPoint initWithName:@"Base Download" andClass:@"GKURLConnectionDownloadViewController"];
-    GKPoint *point22 = [GKPoint initWithName:@"Deligate Download" andClass:@"GKURLConnectionDeligateDownloadViewController"];
-    GKPoint *point23 = [GKPoint initWithName:@"Deligate2 Download" andClass:@"GKURLConnectionDeligateDownload2ViewController"];
-    GKPoint *point24 = [GKPoint initWithName:@"Deligate3 Download" andClass:@"GKURLConnectionDeligateDownload3ViewController"];
+    GKPoint *point22 = [GKPoint initWithName:@"Delegate Download" andClass:@"GKURLConnectionDeligateDownloadViewController"];
+    GKPoint *point23 = [GKPoint initWithName:@"Delegate2 Download" andClass:@"GKURLConnectionDeligateDownload2ViewController"];
+    GKPoint *point24 = [GKPoint initWithName:@"Delegate3 Download" andClass:@"GKURLConnectionDeligateDownload3ViewController"];
     GKGroup *group2 = [GKGroup initWithName:@"NSURLConnection" andDetail:@"" andPoints:[NSMutableArray arrayWithObjects:point21, point22, point23, point24, nil]];
     [_groupArray addObject:group2];
     
@@ -89,6 +89,10 @@
     GKPoint *point44 = [GKPoint initWithName:@"Upload AFN" andClass:@"GKAFNUploadViewController"];
     GKGroup *group4 = [GKGroup initWithName:@"HTTP" andDetail:@"" andPoints:[NSMutableArray arrayWithObjects:point41, point42, point43, point44, nil]];
     [_groupArray addObject:group4];
+    
+    GKPoint *point51 = [GKPoint initWithName:@"Delegate" andClass:@"GKDelegateBaseViewController"];
+    GKGroup *group5 = [GKGroup initWithName:@"Syntax" andDetail:@"" andPoints:[NSMutableArray arrayWithObjects:point51, nil]];
+    [_groupArray addObject:group5];
 }
 
 #pragma mark - 数据源方法
