@@ -33,10 +33,10 @@
     NSLog(@"calendarIdentifier:%@", calendar.calendarIdentifier);
     
     // 设置每周的第一天从星期几开始，比如：1代表星期日开始，2代表星期一开始，以此类推。默认值是1
-    NSLog(@"firstWeekday:%d", calendar.firstWeekday);
+    NSLog(@"firstWeekday:%ld", calendar.firstWeekday);
     
     // 设置每年及每月第一周必须包含的最少天数，比如：设定第一周最少包括3天，则value传入3
-    NSLog(@"minimumDaysInFirstWeek:%d", calendar.minimumDaysInFirstWeek);
+    NSLog(@"minimumDaysInFirstWeek:%ld", calendar.minimumDaysInFirstWeek);
     
     // 设置本地化信息
     NSLog(@"locale:%@", calendar.locale);
@@ -47,7 +47,7 @@
     
     // 获取一个小的单位在一个大的单位里面的序数，获取当日是这一周的第几天
     NSUInteger day = [calendar ordinalityOfUnit:NSCalendarUnitWeekday inUnit:NSCalendarUnitWeekOfMonth forDate:date];
-    NSLog(@"ordinalityOfUnit:%d", day);
+    NSLog(@"ordinalityOfUnit:%ld", day);
     
     // 根据参数提供的时间点，得到一个小的单位在一个大的单位里面的取值范围
     range = [calendar rangeOfUnit:NSCalendarUnitWeekday inUnit:NSCalendarUnitWeekOfMonth forDate:date];
@@ -152,7 +152,7 @@
     
     // 比较两个日期的NSCalendarUnitDay大小
     NSComparisonResult result = [calendar compareDate:date toDate:toDate toUnitGranularity:NSCalendarUnitDay];
-    NSLog(@"compareDate:%d", result);
+    NSLog(@"compareDate:%ld", result);
     
     // 比较两个日期的NSCalendarUnitDay 是否相等
     BOOL compare = [calendar isDate:date equalToDate:toDate toUnitGranularity:NSCalendarUnitDay];
@@ -183,7 +183,7 @@
     
     // 提取NSDate对应的NSCalendarUnit的数值,只能提取一个值
     NSInteger component = [calendar component:NSCalendarUnitHour fromDate:date];
-    NSLog(@"NSCalendarUnitHour:%d", component);
+    NSLog(@"NSCalendarUnitHour:%ld", component);
     
     // 提取多个数据
     NSCalendarUnit unitFlags = NSCalendarUnitHour | NSCalendarUnitMinute;// 提取时和分
