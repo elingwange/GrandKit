@@ -15,6 +15,10 @@
 		203673AA22043FE9009DF23A /* GKPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 203673A922043FE9009DF23A /* GKPoint.m */; };
 		203673AE22044007009DF23A /* GKGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 203673AD22044007009DF23A /* GKGroup.m */; };
 		2049E18D220578F3005F127E /* GKURLSessionDeligateDownloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2049E18C220578F3005F127E /* GKURLSessionDeligateDownloadViewController.m */; };
+		204A59B42233A05700A2EC24 /* CalendarUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 204A59B32233A05700A2EC24 /* CalendarUtil.m */; };
+		204A59B62233A64600A2EC24 /* DateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 204A59B52233A64600A2EC24 /* DateTests.m */; };
+		204A59B82233A87900A2EC24 /* DateComponentsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 204A59B72233A87900A2EC24 /* DateComponentsTests.m */; };
+		204A59BA2233AEE800A2EC24 /* CalendarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 204A59B92233AEE800A2EC24 /* CalendarTests.m */; };
 		20560E8A21F9693A000B927F /* GKURLConnectionDownloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20560E8921F9693A000B927F /* GKURLConnectionDownloadViewController.m */; };
 		20560E8D21F9B18E000B927F /* GKURLConnectionDeligateDownloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20560E8C21F9B18E000B927F /* GKURLConnectionDeligateDownloadViewController.m */; };
 		20560E9F21FC0613000B927F /* GKURLConnectionDeligateDownload2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20560E9E21FC0613000B927F /* GKURLConnectionDeligateDownload2ViewController.m */; };
@@ -56,6 +60,16 @@
 		20E020362202E82A0037BE1F /* GKURLSessionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E020352202E82A0037BE1F /* GKURLSessionViewController.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		204A59AC22339CDB00A2EC24 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 206C3F0D21F181F30000F116 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 206C3F1421F181F30000F116;
+			remoteInfo = GrandKit;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		2036739622042C43009DF23A /* unzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unzip.c; sourceTree = "<group>"; };
 		2036739722042C43009DF23A /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
@@ -74,6 +88,13 @@
 		203673AD22044007009DF23A /* GKGroup.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GKGroup.m; sourceTree = "<group>"; };
 		2049E18B220578F3005F127E /* GKURLSessionDeligateDownloadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GKURLSessionDeligateDownloadViewController.h; sourceTree = "<group>"; };
 		2049E18C220578F3005F127E /* GKURLSessionDeligateDownloadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GKURLSessionDeligateDownloadViewController.m; sourceTree = "<group>"; };
+		204A59A722339CDB00A2EC24 /* GrandKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GrandKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		204A59AB22339CDB00A2EC24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		204A59B22233A05700A2EC24 /* CalendarUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalendarUtil.h; sourceTree = "<group>"; };
+		204A59B32233A05700A2EC24 /* CalendarUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalendarUtil.m; sourceTree = "<group>"; };
+		204A59B52233A64600A2EC24 /* DateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DateTests.m; sourceTree = "<group>"; };
+		204A59B72233A87900A2EC24 /* DateComponentsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DateComponentsTests.m; sourceTree = "<group>"; };
+		204A59B92233AEE800A2EC24 /* CalendarTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalendarTests.m; sourceTree = "<group>"; };
 		20560E8821F9693A000B927F /* GKURLConnectionDownloadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GKURLConnectionDownloadViewController.h; sourceTree = "<group>"; };
 		20560E8921F9693A000B927F /* GKURLConnectionDownloadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GKURLConnectionDownloadViewController.m; sourceTree = "<group>"; };
 		20560E8B21F9B18E000B927F /* GKURLConnectionDeligateDownloadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GKURLConnectionDeligateDownloadViewController.h; sourceTree = "<group>"; };
@@ -157,6 +178,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		204A59A422339CDB00A2EC24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		206C3F1221F181F30000F116 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -204,6 +232,26 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		204A59A822339CDB00A2EC24 /* GrandKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				204A59AB22339CDB00A2EC24 /* Info.plist */,
+				204A59B52233A64600A2EC24 /* DateTests.m */,
+				204A59B72233A87900A2EC24 /* DateComponentsTests.m */,
+				204A59B92233AEE800A2EC24 /* CalendarTests.m */,
+			);
+			path = GrandKitTests;
+			sourceTree = "<group>";
+		};
+		204A59B122339FF800A2EC24 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				204A59B22233A05700A2EC24 /* CalendarUtil.h */,
+				204A59B32233A05700A2EC24 /* CalendarUtil.m */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
 		20560E8721F968F6000B927F /* Http */ = {
 			isa = PBXGroup;
 			children = (
@@ -238,6 +286,7 @@
 			isa = PBXGroup;
 			children = (
 				206C3F1721F181F30000F116 /* GrandKit */,
+				204A59A822339CDB00A2EC24 /* GrandKitTests */,
 				206C3F1621F181F30000F116 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -246,6 +295,7 @@
 			isa = PBXGroup;
 			children = (
 				206C3F1521F181F30000F116 /* GrandKit.app */,
+				204A59A722339CDB00A2EC24 /* GrandKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -253,6 +303,7 @@
 		206C3F1721F181F30000F116 /* GrandKit */ = {
 			isa = PBXGroup;
 			children = (
+				204A59B122339FF800A2EC24 /* Calendar */,
 				20CFE55B2213B17E00B9C132 /* Syntax */,
 				206C3F3121F1A5A00000F116 /* Base */,
 				206C3F3221F1AAE90000F116 /* Main */,
@@ -425,6 +476,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		204A59A622339CDB00A2EC24 /* GrandKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 204A59B022339CDB00A2EC24 /* Build configuration list for PBXNativeTarget "GrandKitTests" */;
+			buildPhases = (
+				204A59A322339CDB00A2EC24 /* Sources */,
+				204A59A422339CDB00A2EC24 /* Frameworks */,
+				204A59A522339CDB00A2EC24 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				204A59AD22339CDB00A2EC24 /* PBXTargetDependency */,
+			);
+			name = GrandKitTests;
+			productName = GrandKitTests;
+			productReference = 204A59A722339CDB00A2EC24 /* GrandKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		206C3F1421F181F30000F116 /* GrandKit */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 206C3F2B21F181F40000F116 /* Build configuration list for PBXNativeTarget "GrandKit" */;
@@ -451,6 +520,10 @@
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Evan Fang";
 				TargetAttributes = {
+					204A59A622339CDB00A2EC24 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 206C3F1421F181F30000F116;
+					};
 					206C3F1421F181F30000F116 = {
 						CreatedOnToolsVersion = 10.1;
 					};
@@ -470,11 +543,19 @@
 			projectRoot = "";
 			targets = (
 				206C3F1421F181F30000F116 /* GrandKit */,
+				204A59A622339CDB00A2EC24 /* GrandKitTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		204A59A522339CDB00A2EC24 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		206C3F1321F181F30000F116 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -488,6 +569,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		204A59A322339CDB00A2EC24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				204A59B62233A64600A2EC24 /* DateTests.m in Sources */,
+				204A59B82233A87900A2EC24 /* DateComponentsTests.m in Sources */,
+				204A59BA2233AEE800A2EC24 /* CalendarTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		206C3F1121F181F30000F116 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -516,6 +607,7 @@
 				20E020362202E82A0037BE1F /* GKURLSessionViewController.m in Sources */,
 				20560E8A21F9693A000B927F /* GKURLConnectionDownloadViewController.m in Sources */,
 				20CFE5562212BF1D00B9C132 /* AFNetworkReachabilityManager.m in Sources */,
+				204A59B42233A05700A2EC24 /* CalendarUtil.m in Sources */,
 				20560E9F21FC0613000B927F /* GKURLConnectionDeligateDownload2ViewController.m in Sources */,
 				207880AA21F570A90030D4F5 /* GKSocketChatViewController.m in Sources */,
 				203673AE22044007009DF23A /* GKGroup.m in Sources */,
@@ -541,6 +633,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		204A59AD22339CDB00A2EC24 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 206C3F1421F181F30000F116 /* GrandKit */;
+			targetProxy = 204A59AC22339CDB00A2EC24 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		206C3F2321F181F40000F116 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -553,6 +653,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		204A59AE22339CDB00A2EC24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GrandKitTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.evan.example.GrandKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GrandKit.app/GrandKit";
+			};
+			name = Debug;
+		};
+		204A59AF22339CDB00A2EC24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GrandKitTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.evan.example.GrandKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GrandKit.app/GrandKit";
+			};
+			name = Release;
+		};
 		206C3F2921F181F40000F116 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -704,6 +842,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		204A59B022339CDB00A2EC24 /* Build configuration list for PBXNativeTarget "GrandKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				204A59AE22339CDB00A2EC24 /* Debug */,
+				204A59AF22339CDB00A2EC24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		206C3F1021F181F30000F116 /* Build configuration list for PBXProject "GrandKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
