@@ -64,6 +64,11 @@
 -(void)initData{
     _groupArray=[[NSMutableArray alloc]init];
     
+    
+    GKPoint *point61 = [GKPoint initWithName:@"ImagePicker" andClass:@"ImagePickerDemoViewController"];
+    GKGroup *group6 = [GKGroup initWithName:@"UI" andDetail:@"" andPoints:[NSMutableArray arrayWithObjects:point61, nil]];
+    [_groupArray addObject:group6];
+    
     GKPoint *point1 = [GKPoint initWithName:@"Base" andClass:@"GKSocketBaseViewController"];
     GKPoint *point2 = [GKPoint initWithName:@"Chat" andClass:@"GKSocketChatViewController"];
     GKPoint *point3 = [GKPoint initWithName:@"Http" andClass:@"GKSocketHttpViewController"];

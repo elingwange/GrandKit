@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface NSString (Com)
+@interface NSString (EFCom)
 
 + (bool)isEmpty:(NSString *)string;
 

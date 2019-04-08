@@ -1,4 +1,64 @@
 
-怎么设置全局分类    done
-创建视图控制器基类   done
-iOS的Toast
+确认签到接口返回数据  done
+确认补签接口  done
+编写补签卡样式     done
+补签卡数据适配     done
+补签卡列表分页处理   done
+没有补签卡不显示补签  done
+已签到日期不响应补签点击    done
+钱包列表同时显示ETH和EOS钱包   done
+放开英文输入  done
+DB添加钱包类型字段  done
+按钮添加不可用状态样式和控制  done
+私钥输入监听处理    done
+添加隐私条款点击跳转  done
+账户名重名检测     done
+交易密码加密  done
+临时Eos钱包Model    done
+测试临时Eos钱包DB功能   done
+判断是否已设置交易密码     done
+跳转到中心EOS充值界面    done
+账户名合法性检测    done
+密码兼有数字和字母的检测    done
+导入添加加载框     done
+APT记录样式调整   done
+签到奖励记录列表样式调整    done
+月历行数计算处理    done
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+public static final String BASE_URL = "http://192.168.1.250:8008";
+public static final String BASE_URL = "http://47.107.136.85:8081";

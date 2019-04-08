@@ -6,9 +6,9 @@
 //  Copyright © 2019 Evan Fang. All rights reserved.
 //
 
-#import "NSString+Com.h"
+#import "NSString+EFCom.h"
 
-@implementation NSString (Com)
+@implementation NSString (EFCom)
 
 + (bool)isEmpty:(NSString *)string {
     if (string != nil && ![string isKindOfClass:[NSNull class]]) {

@@ -14,7 +14,7 @@
 #import "UIFont+Com.h"
 #import "UIButton+Com.h"
 
-#import "NSString+Com.h"
+#import "NSString+EFCom.h"
 
 #import "EFBaseViewController.h"
 
