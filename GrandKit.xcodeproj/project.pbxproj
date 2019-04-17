@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		2010145D2245D93400799F70 /* InputUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 2010145C2245D93400799F70 /* InputUtil.m */; };
-		201014652246026400799F70 /* UtilTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 201014642246026400799F70 /* UtilTest.m */; };
 		2036739E22042C43009DF23A /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 2036739622042C43009DF23A /* unzip.c */; };
 		2036739F22042C43009DF23A /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 2036739722042C43009DF23A /* zip.c */; };
 		203673A022042C43009DF23A /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 2036739822042C43009DF23A /* ioapi.c */; };
@@ -81,6 +80,7 @@
 		20CFE55E2213B1B100B9C132 /* GKDelegateBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CFE55D2213B1B100B9C132 /* GKDelegateBaseViewController.m */; };
 		20CFE5622213B50300B9C132 /* MeatFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CFE5612213B50300B9C132 /* MeatFactory.m */; };
 		20E020362202E82A0037BE1F /* GKURLSessionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E020352202E82A0037BE1F /* GKURLSessionViewController.m */; };
+		63975EAF22654823001BE6D3 /* SeqListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 63975EAE22654823001BE6D3 /* SeqListTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,7 +96,6 @@
 /* Begin PBXFileReference section */
 		2010145B2245D93400799F70 /* InputUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InputUtil.h; sourceTree = "<group>"; };
 		2010145C2245D93400799F70 /* InputUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InputUtil.m; sourceTree = "<group>"; };
-		201014642246026400799F70 /* UtilTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UtilTest.m; sourceTree = "<group>"; };
 		2036739622042C43009DF23A /* unzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unzip.c; sourceTree = "<group>"; };
 		2036739722042C43009DF23A /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
 		2036739822042C43009DF23A /* ioapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi.c; sourceTree = "<group>"; };
@@ -243,6 +242,7 @@
 		20CFE5612213B50300B9C132 /* MeatFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeatFactory.m; sourceTree = "<group>"; };
 		20E020342202E82A0037BE1F /* GKURLSessionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GKURLSessionViewController.h; sourceTree = "<group>"; };
 		20E020352202E82A0037BE1F /* GKURLSessionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GKURLSessionViewController.m; sourceTree = "<group>"; };
+		63975EAE22654823001BE6D3 /* SeqListTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SeqListTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -316,7 +316,7 @@
 				204A59B52233A64600A2EC24 /* DateTests.m */,
 				204A59B72233A87900A2EC24 /* DateComponentsTests.m */,
 				204A59B92233AEE800A2EC24 /* CalendarTests.m */,
-				201014642246026400799F70 /* UtilTest.m */,
+				63975EAE22654823001BE6D3 /* SeqListTests.m */,
 			);
 			path = GrandKitTests;
 			sourceTree = "<group>";
@@ -767,9 +767,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				204A59B62233A64600A2EC24 /* DateTests.m in Sources */,
+				63975EAF22654823001BE6D3 /* SeqListTests.m in Sources */,
 				204A59B82233A87900A2EC24 /* DateComponentsTests.m in Sources */,
 				204A59BA2233AEE800A2EC24 /* CalendarTests.m in Sources */,
-				201014652246026400799F70 /* UtilTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
