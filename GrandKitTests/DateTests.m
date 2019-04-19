@@ -126,4 +126,33 @@
     NSLog(@"%@", description);
 }
 
+- (void)testTemp {
+    NSInteger dayNumber = 18;
+    NSString *string = [DateTests makeUpDate:dayNumber];
+    string = [DateTests timestampSwitchTime:[string integerValue] format:@"YYYY-MM-dd"];
+}
+
++ (NSString *)makeUpDate:(NSInteger)dayNumber {
+    
+    NSDate *currentDate = [NSDate date];//获取当前时间，日期
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];// 创建一个时间格式化对象
+    [dateFormatter setDateFormat:@"YYYY-MM-"];//设定时间格式,这里可以设置成自己需要的格式
+    NSString *dateString = [dateFormatter stringFromDate:currentDate];//将时间转化成字符串
+    if (dayNumber > 9) {
+        dateString = [NSString stringWithFormat:@"%@%ld", dateString, dayNumber];
+    }
+    else {
+        dateString = [NSString stringWithFormat:@"%@0%ld", dateString, dayNumber];
+    }
+    return dateString;
+}
+
++ (NSString *)timestampSwitchTime:(NSInteger)timestamp format:(NSString *)format{
+    NSDate *confromTimesp = [NSDate dateWithTimeIntervalSince1970:timestamp / 1000.0];
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:format];
+    NSString *confromTimespStr = [formatter stringFromDate:confromTimesp];
+    return confromTimespStr;
+}
+
 @end

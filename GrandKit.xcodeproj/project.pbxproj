@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		2010145D2245D93400799F70 /* InputUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 2010145C2245D93400799F70 /* InputUtil.m */; };
-		201014652246026400799F70 /* UtilTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 201014642246026400799F70 /* UtilTest.m */; };
 		2036739E22042C43009DF23A /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 2036739622042C43009DF23A /* unzip.c */; };
 		2036739F22042C43009DF23A /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 2036739722042C43009DF23A /* zip.c */; };
 		203673A022042C43009DF23A /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 2036739822042C43009DF23A /* ioapi.c */; };
@@ -46,6 +45,10 @@
 		20639566225B18E600F0D4D7 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 20639560225B18E500F0D4D7 /* UIColor+Hex.m */; };
 		20639567225B18E600F0D4D7 /* UIView+DNImagePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 20639561225B18E500F0D4D7 /* UIView+DNImagePicker.m */; };
 		20639568225B18E600F0D4D7 /* UIViewController+DNImagePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 20639565225B18E600F0D4D7 /* UIViewController+DNImagePicker.m */; };
+		2063956F225C34EA00F0D4D7 /* EFImageClipController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2063956E225C34EA00F0D4D7 /* EFImageClipController.m */; };
+		20639573225C625E00F0D4D7 /* EFImagePickerViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 20639572225C625E00F0D4D7 /* EFImagePickerViewController2.m */; };
+		20639576225C647D00F0D4D7 /* CropImageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20639575225C647D00F0D4D7 /* CropImageController.m */; };
+		2063957A225C654A00F0D4D7 /* UIImage+Crop.m in Sources */ = {isa = PBXBuildFile; fileRef = 20639579225C654A00F0D4D7 /* UIImage+Crop.m */; };
 		206C3F1A21F181F30000F116 /* GKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 206C3F1921F181F30000F116 /* GKAppDelegate.m */; };
 		206C3F1D21F181F30000F116 /* GKMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 206C3F1C21F181F30000F116 /* GKMainViewController.m */; };
 		206C3F2221F181F40000F116 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 206C3F2121F181F40000F116 /* Assets.xcassets */; };
@@ -61,6 +64,7 @@
 		207880AA21F570A90030D4F5 /* GKSocketChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 207880A921F570A90030D4F5 /* GKSocketChatViewController.m */; };
 		207880B021F5920E0030D4F5 /* NSString+EFCom.m in Sources */ = {isa = PBXBuildFile; fileRef = 207880AF21F5920E0030D4F5 /* NSString+EFCom.m */; };
 		2096F2B721F88388008DC254 /* GKSocketHttpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2096F2B621F88388008DC254 /* GKSocketHttpViewController.m */; };
+		20B16D5C226434BC00FE5DC9 /* StringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20B16D5B226434BC00FE5DC9 /* StringTests.m */; };
 		20CFE5262211292400B9C132 /* RainbowProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CFE5252211292400B9C132 /* RainbowProgress.m */; };
 		20CFE52A22113F7600B9C132 /* GKURLSessionDeligateDownloadResumeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CFE52922113F7600B9C132 /* GKURLSessionDeligateDownloadResumeViewController.m */; };
 		20CFE52D2211430700B9C132 /* UIButton+Com.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CFE52C2211430700B9C132 /* UIButton+Com.m */; };
@@ -96,7 +100,6 @@
 /* Begin PBXFileReference section */
 		2010145B2245D93400799F70 /* InputUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InputUtil.h; sourceTree = "<group>"; };
 		2010145C2245D93400799F70 /* InputUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InputUtil.m; sourceTree = "<group>"; };
-		201014642246026400799F70 /* UtilTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UtilTest.m; sourceTree = "<group>"; };
 		2036739622042C43009DF23A /* unzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unzip.c; sourceTree = "<group>"; };
 		2036739722042C43009DF23A /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
 		2036739822042C43009DF23A /* ioapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi.c; sourceTree = "<group>"; };
@@ -172,6 +175,14 @@
 		20639564225B18E500F0D4D7 /* UIViewController+DNImagePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+DNImagePicker.h"; sourceTree = "<group>"; };
 		20639565225B18E600F0D4D7 /* UIViewController+DNImagePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+DNImagePicker.m"; sourceTree = "<group>"; };
 		20639569225B190A00F0D4D7 /* DNImagePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNImagePicker.h; sourceTree = "<group>"; };
+		2063956D225C34EA00F0D4D7 /* EFImageClipController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EFImageClipController.h; sourceTree = "<group>"; };
+		2063956E225C34EA00F0D4D7 /* EFImageClipController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EFImageClipController.m; sourceTree = "<group>"; };
+		20639571225C625E00F0D4D7 /* EFImagePickerViewController2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EFImagePickerViewController2.h; sourceTree = "<group>"; };
+		20639572225C625E00F0D4D7 /* EFImagePickerViewController2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EFImagePickerViewController2.m; sourceTree = "<group>"; };
+		20639574225C647D00F0D4D7 /* CropImageController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CropImageController.h; sourceTree = "<group>"; };
+		20639575225C647D00F0D4D7 /* CropImageController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CropImageController.m; sourceTree = "<group>"; };
+		20639578225C654A00F0D4D7 /* UIImage+Crop.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Crop.h"; sourceTree = "<group>"; };
+		20639579225C654A00F0D4D7 /* UIImage+Crop.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Crop.m"; sourceTree = "<group>"; };
 		206C3F1521F181F30000F116 /* GrandKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrandKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		206C3F1821F181F30000F116 /* GKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GKAppDelegate.h; sourceTree = "<group>"; };
 		206C3F1921F181F30000F116 /* GKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GKAppDelegate.m; sourceTree = "<group>"; };
@@ -202,6 +213,7 @@
 		207880AF21F5920E0030D4F5 /* NSString+EFCom.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+EFCom.m"; sourceTree = "<group>"; };
 		2096F2B521F88388008DC254 /* GKSocketHttpViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GKSocketHttpViewController.h; sourceTree = "<group>"; };
 		2096F2B621F88388008DC254 /* GKSocketHttpViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GKSocketHttpViewController.m; sourceTree = "<group>"; };
+		20B16D5B226434BC00FE5DC9 /* StringTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StringTests.m; sourceTree = "<group>"; };
 		20CFE5242211292400B9C132 /* RainbowProgress.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RainbowProgress.h; sourceTree = "<group>"; };
 		20CFE5252211292400B9C132 /* RainbowProgress.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RainbowProgress.m; sourceTree = "<group>"; };
 		20CFE52822113F7600B9C132 /* GKURLSessionDeligateDownloadResumeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GKURLSessionDeligateDownloadResumeViewController.h; sourceTree = "<group>"; };
@@ -316,7 +328,7 @@
 				204A59B52233A64600A2EC24 /* DateTests.m */,
 				204A59B72233A87900A2EC24 /* DateComponentsTests.m */,
 				204A59B92233AEE800A2EC24 /* CalendarTests.m */,
-				201014642246026400799F70 /* UtilTest.m */,
+				20B16D5B226434BC00FE5DC9 /* StringTests.m */,
 			);
 			path = GrandKitTests;
 			sourceTree = "<group>";
@@ -379,9 +391,14 @@
 		20639527225AE68600F0D4D7 /* ImagePicker */ = {
 			isa = PBXGroup;
 			children = (
+				20639577225C652200F0D4D7 /* CropImage */,
 				2063952B225B181C00F0D4D7 /* DNImagePicker */,
 				20639528225AE6BC00F0D4D7 /* EFImagePickerController.h */,
 				20639529225AE6BC00F0D4D7 /* EFImagePickerController.m */,
+				2063956D225C34EA00F0D4D7 /* EFImageClipController.h */,
+				2063956E225C34EA00F0D4D7 /* EFImageClipController.m */,
+				20639571225C625E00F0D4D7 /* EFImagePickerViewController2.h */,
+				20639572225C625E00F0D4D7 /* EFImagePickerViewController2.m */,
 			);
 			path = ImagePicker;
 			sourceTree = "<group>";
@@ -420,22 +437,22 @@
 		20639538225B188400F0D4D7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				20639539225B188400F0D4D7 /* DNUnAuthorizedTipsView.h */,
+				20639543225B188400F0D4D7 /* DNAssetsViewCell.h */,
 				2063953A225B188400F0D4D7 /* DNAssetsViewCell.m */,
 				2063953B225B188400F0D4D7 /* DNAlbumCell.h */,
+				20639542225B188400F0D4D7 /* DNAlbumCell.m */,
+				20639539225B188400F0D4D7 /* DNUnAuthorizedTipsView.h */,
+				20639541225B188400F0D4D7 /* DNUnAuthorizedTipsView.m */,
 				2063953C225B188400F0D4D7 /* DNFullImageButton.m */,
+				20639546225B188400F0D4D7 /* DNFullImageButton.h */,
+				20639545225B188400F0D4D7 /* DNBadgeLabel.h */,
 				2063953D225B188400F0D4D7 /* DNBadgeLabel.m */,
 				2063953E225B188400F0D4D7 /* DNTapDetectingImageView.h */,
-				2063953F225B188400F0D4D7 /* DNBrowserCell.h */,
-				20639540225B188400F0D4D7 /* DNSendButton.h */,
-				20639541225B188400F0D4D7 /* DNUnAuthorizedTipsView.m */,
-				20639542225B188400F0D4D7 /* DNAlbumCell.m */,
-				20639543225B188400F0D4D7 /* DNAssetsViewCell.h */,
 				20639544225B188400F0D4D7 /* DNTapDetectingImageView.m */,
-				20639545225B188400F0D4D7 /* DNBadgeLabel.h */,
-				20639546225B188400F0D4D7 /* DNFullImageButton.h */,
-				20639547225B188400F0D4D7 /* DNSendButton.m */,
+				2063953F225B188400F0D4D7 /* DNBrowserCell.h */,
 				20639548225B188400F0D4D7 /* DNBrowserCell.m */,
+				20639540225B188400F0D4D7 /* DNSendButton.h */,
+				20639547225B188400F0D4D7 /* DNSendButton.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -462,6 +479,17 @@
 				20639565225B18E600F0D4D7 /* UIViewController+DNImagePicker.m */,
 			);
 			path = Categary;
+			sourceTree = "<group>";
+		};
+		20639577225C652200F0D4D7 /* CropImage */ = {
+			isa = PBXGroup;
+			children = (
+				20639574225C647D00F0D4D7 /* CropImageController.h */,
+				20639575225C647D00F0D4D7 /* CropImageController.m */,
+				20639578225C654A00F0D4D7 /* UIImage+Crop.h */,
+				20639579225C654A00F0D4D7 /* UIImage+Crop.m */,
+			);
+			path = CropImage;
 			sourceTree = "<group>";
 		};
 		206C3F0C21F181F30000F116 = {
@@ -767,9 +795,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				204A59B62233A64600A2EC24 /* DateTests.m in Sources */,
+				20B16D5C226434BC00FE5DC9 /* StringTests.m in Sources */,
 				204A59B82233A87900A2EC24 /* DateComponentsTests.m in Sources */,
 				204A59BA2233AEE800A2EC24 /* CalendarTests.m in Sources */,
-				201014652246026400799F70 /* UtilTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -789,6 +817,7 @@
 				20CFE5392212663E00B9C132 /* EFNetworkTool.m in Sources */,
 				20639554225B188400F0D4D7 /* DNAssetsViewCell.m in Sources */,
 				203673AA22043FE9009DF23A /* GKPoint.m in Sources */,
+				20639573225C625E00F0D4D7 /* EFImagePickerViewController2.m in Sources */,
 				2063955D225B188400F0D4D7 /* DNAlbum.m in Sources */,
 				20CFE52D2211430700B9C132 /* UIButton+Com.m in Sources */,
 				2049E18D220578F3005F127E /* GKURLSessionDeligateDownloadViewController.m in Sources */,
@@ -819,6 +848,7 @@
 				203673AE22044007009DF23A /* GKGroup.m in Sources */,
 				203673A122042C43009DF23A /* mztools.c in Sources */,
 				206C3F5221F304C80000F116 /* UIFont+Com.m in Sources */,
+				20639576225C647D00F0D4D7 /* CropImageController.m in Sources */,
 				20639550225B188400F0D4D7 /* DNImagePickerController.m in Sources */,
 				206C3F4F21F3035F0000F116 /* EFNavigationController.m in Sources */,
 				206C3F2821F181F40000F116 /* main.m in Sources */,
@@ -836,6 +866,8 @@
 				20560E8D21F9B18E000B927F /* GKURLConnectionDeligateDownloadViewController.m in Sources */,
 				2063955E225B188400F0D4D7 /* DNAsset.m in Sources */,
 				20639557225B188400F0D4D7 /* DNUnAuthorizedTipsView.m in Sources */,
+				2063957A225C654A00F0D4D7 /* UIImage+Crop.m in Sources */,
+				2063956F225C34EA00F0D4D7 /* EFImageClipController.m in Sources */,
 				20CFE55A2212C45F00B9C132 /* GKAFNUploadViewController.m in Sources */,
 				20CFE55E2213B1B100B9C132 /* GKDelegateBaseViewController.m in Sources */,
 				20CFE536221264FC00B9C132 /* GKHttpUploadViewController.m in Sources */,

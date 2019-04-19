@@ -64,9 +64,9 @@
 -(void)initData{
     _groupArray=[[NSMutableArray alloc]init];
     
-    
-    GKPoint *point61 = [GKPoint initWithName:@"ImagePicker" andClass:@"ImagePickerDemoViewController"];
-    GKGroup *group6 = [GKGroup initWithName:@"UI" andDetail:@"" andPoints:[NSMutableArray arrayWithObjects:point61, nil]];
+    GKPoint *point61 = [GKPoint initWithName:@"ImagePicker Default" andClass:@"EFImagePickerViewController2"];
+    GKPoint *point62 = [GKPoint initWithName:@"ImagePicker Custom" andClass:@"ImagePickerDemoViewController"];
+    GKGroup *group6 = [GKGroup initWithName:@"UI" andDetail:@"" andPoints:[NSMutableArray arrayWithObjects:point61, point62, nil]];
     [_groupArray addObject:group6];
     
     GKPoint *point1 = [GKPoint initWithName:@"Base" andClass:@"GKSocketBaseViewController"];

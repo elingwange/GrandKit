@@ -7,6 +7,7 @@
 //
 
 #import "EFImagePickerController.h"
+#import "EFImageClipController.h"
 
 #import "UIViewController+DNImagePicker.h"
 #import "UIView+DNImagePicker.h"
@@ -44,14 +45,11 @@ static NSString* const dnAssetsViewCellReuseIdentifier = @"DNAssetsViewCell";
     return self;
 }
 
-- (instancetype)initWithAblum:(DNAlbum *)album {
-    self = [super init];
+- (void)initWithAblum {
     if (self) {
         _assetsArray = [NSMutableArray array];
         _selectedAssetsArray = [NSMutableArray array];
-        _album = album;
     }
-    return self;
 }
 
 #pragma mark - getter/setter
@@ -102,7 +100,7 @@ static NSString* const dnAssetsViewCellReuseIdentifier = @"DNAssetsViewCell";
 
 - (void)setupView {
     
-    [self initWithAblum:nil];
+    [self initWithAblum];
     
     self.view.backgroundColor = [UIColor whiteColor];
     [self createBarButtonItemAtPosition:DNImagePickerNavigationBarPositionRight
@@ -147,7 +145,7 @@ static NSString* const dnAssetsViewCellReuseIdentifier = @"DNAssetsViewCell";
         [sSelf.assetsArray removeAllObjects];
         [sSelf.assetsArray addObjectsFromArray:imageArray];
         [self.imageFlowCollectionView reloadData];
-//        [self scrollerToBottom:NO];
+        [self scrollerToBottom:NO];
     }];
 }
 
@@ -187,6 +185,12 @@ static NSString* const dnAssetsViewCellReuseIdentifier = @"DNAssetsViewCell";
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
 //    [self browserPhotoAsstes:self.assetsArray pageIndex:indexPath.row];
+    
+    DNAsset *asset = [self.assetsArray objectAtIndex:indexPath.row];
+    
+    EFImageClipController *vc = [EFImageClipController new];
+    vc.asset = asset;
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 #define kSizeThumbnailCollectionView  ([UIScreen mainScreen].bounds.size.width-10)/4
