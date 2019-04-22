@@ -10,38 +10,48 @@
 
 /* 单链表定义 */
 
-typedef char DataType;
-
-typedef struct note {
-    DataType data;
+typedef struct note{
+    int data;
     struct note *next;
 } Node;
 
-typedef Node * LinkList;
+typedef Node LinkList;
 
 /* ----- END ----- */
 
 
 @interface LinkListTests : XCTestCase
-
-//void init(LinkList p);                                   /** 初始化操作，建立一个空链表 **/
-
-
-
 @end
+
 
 @implementation LinkListTests
 
+LinkList *creatLinkList2(int n) {
+    Node *head, *tail;
+    head = (Node *)malloc(sizeof(Node));
+    tail = head;
+    for (int i = 0; i < n; i++) {
+        Node *node = (Node *)malloc(sizeof(Node));
+        node->data = i + 1;
+        tail->next = node;
+        tail = node;
+    }
+    tail->next = NULL;
+    return head;
+}
 
-//void init(LinkList p) {
-//    p->data = 0;
-//    p->next = NULL;
-//}
+void printLinkList(LinkList *pList) {
+    while(pList->next != NULL) {
+        NSLog(@"Tag %d", pList->data);
+        pList = pList->next;
+    }
+}
 
 
 - (void)testLinkList {
 
-
+    LinkList *pList = creatLinkList2(5);
+    printLinkList(pList);
 }
 
 @end
