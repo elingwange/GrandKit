@@ -1,42 +1,40 @@
 //
-//  LinkListTests.m
+//  LinkListTests2.m
 //  GrandKitTests
 //
-//  Created by Evan Fang on 2019/4/22.
+//  Created by Evan Fang on 2019/4/24.
 //  Copyright © 2019 Evan Fang. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
 
-/* 单链表定义 */
-
-typedef struct note{
-    int data;
-    struct note *next;
-} Node;
-
-typedef Node LinkList;
-
-/* ----- END ----- */
-
-
 @interface LinkListTests : XCTestCase
 @end
+
+typedef int DataType;
+typedef struct node {
+    DataType data;
+    struct node *next;
+} ListNode;
+
+typedef ListNode *LinkList;
+LinkList *p;
+LinkList head;
 
 
 @implementation LinkListTests
 
-LinkList *creatLinkList(int n) {
-    Node *head, *tail;
-    head = (Node *)malloc(sizeof(Node));
+LinkList creatLinkList(int n) {
+    ListNode *head, *tail;
+    head = (ListNode *)malloc(sizeof(ListNode));
 //    NSLog(@"Tag %d", head->data);
-    
+
     tail = head;
-    for (int i = 1; i < n; i++) {
-        Node *node = (Node *)malloc(sizeof(Node));
+    for (int i = n; i > 0; i -= 2) {
+        ListNode *node = (ListNode *)malloc(sizeof(ListNode));
         node->data = i;
 //        NSLog(@"Tag %d", node->data);
-        
+
         tail->next = node;
         tail = node;
     }
@@ -44,8 +42,8 @@ LinkList *creatLinkList(int n) {
     return head;
 }
 
-void printLinkList(LinkList *pList) {
-    Node *p = pList;
+void printLinkList(LinkList list) {
+    ListNode *p = list;
     while(p->next != NULL) {
         NSLog(@"Tag %d", p->data);
         p = p->next;
@@ -54,72 +52,92 @@ void printLinkList(LinkList *pList) {
     NSLog(@"Tag ------------");
 }
 
-LinkList * insertToHead(LinkList *pList, Node *pNode) {
-    pNode->next = pList;
-    return pNode;
-}
-
-LinkList * insertToRear(LinkList *pList, Node *pNode) {
-    // 定义初始指向头部的尾指针
-    Node *pear = pList;
-    // 将尾指针移到尾部
-    while (pear->next != NULL) {
-        pear = pear->next;
-    }
-    pear->next = pNode;
-    pNode->next = NULL;
-    return pList;
-}
-
-LinkList * insertList(LinkList *list, Node *node, int position) {
+ListNode *GetNodei(LinkList head, int i) {
     
-    Node *pMoving = list;
-    // 将指针移动到指定位置的前一位
-    for (int i = 1; i < (position - 1); i++) {
-        pMoving = pMoving->next;
+    ListNode *p; int j;
+    p=head->next; j=1;
+    while (p != NULL && j<i) {
+        p=p->next; ++j;
     }
-    node->next = pMoving->next;
-    pMoving->next = node;
-    
-    return list;
+    if (j==i)
+        return p;
+    else
+        return NULL;
 }
 
-LinkList * deleteList(LinkList *list, int position) {
-    Node *near = list;
-    for (int i = 1; i < (position - 1); i++) {
-        near = near->next;
+void split(LinkList a, LinkList b) {
+    ListNode *p, *r, *s;    // 使用局部的指针变量，便于临时操作
+    p = a->next;    // p指向表头节点，游标指针
+    r = a;          // r指向A表的当前节点
+    s = b;          // s指向B表的当前节点
+    while (p != NULL) {
+        r->next = p;        // 序号为奇数的节点链接到A表上
+        r = p;              // r总是指向A链表到最后一个节点
+        p = p->next;        // 游标指针指向下一节点
+        if (p != NULL) {
+            s->next = p;
+            s = p;
+            p = p->next;
+        }
     }
-    // 此处对节点指针的释放的用法有问题
-//    Node *node = near->next;
-//    free(node);
-    near->next = near->next->next;
-    return list;
+    r->next = s->next = NULL;
+}
+
+LinkList mergeList(LinkList La, LinkList Lb) {
+    ListNode *pa, *pb, *pc;
+    pa = La->next;
+    pb = Lb->next;
+    LinkList Lc;
+    Lc = pc = La;
+    
+    while (pa != NULL && pb != NULL) {
+        if (pa->data <= pb->data) {
+            pc->next = pa;
+            pc = pa;
+            pa = pa->next;
+        }
+        else {
+            pc->next = pb;
+            pc = pb;
+            pb = pb->next;
+        }
+    }
+    pc->next = pa != NULL ? pa : pb;
+    free(Lb);
+    return Lc;
+}
+
+void insertList(LinkList head, ListNode *node) {
+    
+    ListNode *p;
+    p = head;
+    
+    while (p->next != head) {
+        
+        
+    }
+    
+    
 }
 
 - (void)testLinkList {
-
-    LinkList *pList = creatLinkList(5);
-//    printLinkList(pList);
     
-    Node *node = (Node *)malloc(sizeof(Node));
-//    node->data = 11;
-//    pList = insertToHead(pList, node);
-//    printLinkList(pList);
-//
-//    // 头节点 表头节点
-//
-//    node = (Node *)malloc(sizeof(Node));
-//    node->data = 22;
-//    pList = insertToRear(pList, node);
-    printLinkList(pList);
+    head = creatLinkList(10);
+    printLinkList(head);
     
-    node->data = 99;
-    pList = insertList(pList, node, 2);
-    printLinkList(pList);
+//    ListNode *node = GetNodei(head, 5);
+//    NSLog(@"Tag %d", node->data);
     
+//    LinkList b = (ListNode *)malloc(sizeof(ListNode));
+//    split(head, b);
+//    printLinkList(head);
     
-    pList = deleteList(pList, 2);
-    printLinkList(pList);
+//    LinkList Lc = mergeList(head, b);
+//    printLinkList(Lc);
+    
+    ListNode *node = (ListNode *)malloc(sizeof(ListNode));
+    node->data = 5;
+    insertList(head, node);
     
 }
 
