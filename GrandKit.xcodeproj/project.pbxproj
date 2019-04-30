@@ -22,6 +22,7 @@
 		204A59B82233A87900A2EC24 /* DateComponentsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 204A59B72233A87900A2EC24 /* DateComponentsTests.m */; };
 		204A59BA2233AEE800A2EC24 /* CalendarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 204A59B92233AEE800A2EC24 /* CalendarTests.m */; };
 		204D826F2275C82700416509 /* LinkListTests10.m in Sources */ = {isa = PBXBuildFile; fileRef = 204D826E2275C82700416509 /* LinkListTests10.m */; };
+		204F7AF82278661A003685B4 /* LinkListTests11.m in Sources */ = {isa = PBXBuildFile; fileRef = 204F7AF72278661A003685B4 /* LinkListTests11.m */; };
 		20560E8A21F9693A000B927F /* GKURLConnectionDownloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20560E8921F9693A000B927F /* GKURLConnectionDownloadViewController.m */; };
 		20560E8D21F9B18E000B927F /* GKURLConnectionDeligateDownloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20560E8C21F9B18E000B927F /* GKURLConnectionDeligateDownloadViewController.m */; };
 		20560E9F21FC0613000B927F /* GKURLConnectionDeligateDownload2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20560E9E21FC0613000B927F /* GKURLConnectionDeligateDownload2ViewController.m */; };
@@ -129,6 +130,7 @@
 		204A59B72233A87900A2EC24 /* DateComponentsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DateComponentsTests.m; sourceTree = "<group>"; };
 		204A59B92233AEE800A2EC24 /* CalendarTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalendarTests.m; sourceTree = "<group>"; };
 		204D826E2275C82700416509 /* LinkListTests10.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LinkListTests10.m; sourceTree = "<group>"; };
+		204F7AF72278661A003685B4 /* LinkListTests11.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LinkListTests11.m; sourceTree = "<group>"; };
 		20560E8821F9693A000B927F /* GKURLConnectionDownloadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GKURLConnectionDownloadViewController.h; sourceTree = "<group>"; };
 		20560E8921F9693A000B927F /* GKURLConnectionDownloadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GKURLConnectionDownloadViewController.m; sourceTree = "<group>"; };
 		20560E8B21F9B18E000B927F /* GKURLConnectionDeligateDownloadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GKURLConnectionDeligateDownloadViewController.h; sourceTree = "<group>"; };
@@ -338,6 +340,7 @@
 				63975EAE22654823001BE6D3 /* SeqListTests.m */,
 				2043DDF422708799004EA85A /* LinkListTests.m */,
 				204D826E2275C82700416509 /* LinkListTests10.m */,
+				204F7AF72278661A003685B4 /* LinkListTests11.m */,
 			);
 			path = GrandKitTests;
 			sourceTree = "<group>";
@@ -806,6 +809,7 @@
 				204A59B62233A64600A2EC24 /* DateTests.m in Sources */,
 				2043DDF522708799004EA85A /* LinkListTests.m in Sources */,
 				20B16D5C226434BC00FE5DC9 /* StringTests.m in Sources */,
+				204F7AF82278661A003685B4 /* LinkListTests11.m in Sources */,
 				63975EAF22654823001BE6D3 /* SeqListTests.m in Sources */,
 				204A59B82233A87900A2EC24 /* DateComponentsTests.m in Sources */,
 				204A59BA2233AEE800A2EC24 /* CalendarTests.m in Sources */,

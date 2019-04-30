@@ -49,7 +49,7 @@ LinkList creatLinkListB_10(int n) {
     ListNode *head, *tail;
     head = (ListNode *)malloc(sizeof(ListNode));
     tail = head;
-    for (int i = 2; i < n; i += 2) {
+    for (int i = 2; i < n; i += 3) {
         ListNode *node = (ListNode *)malloc(sizeof(ListNode));
         node->data = i;
         tail->next = node;
@@ -78,7 +78,8 @@ LinkList mixLinkList(LinkList A, LinkList B)
     ListNode *pc = C;
     
     pa = A->next;
-    while (!(pa->data == 0 && pa->next == NULL))
+    // 循环链表更方便：(pa->data != 0) 如果是头节点，结束遍历
+    while (pa->next != NULL)
     {
         ListNode *pb = B->next;
         
@@ -95,8 +96,20 @@ LinkList mixLinkList(LinkList A, LinkList B)
         }
         pa = pa->next;
     }
-    
-    
+    // 此时pa指向最后一个节点，再遍历比对A中最后一个Data值
+    ListNode *pb = B->next;
+    while (pb->next != NULL)
+    {
+        if (pa->data == pb->data)
+        {
+            ListNode *node = (ListNode *)malloc(sizeof(ListNode));
+            node->data = pb->data;
+            pc->next = node;
+            pc = pc->next;
+        }
+        pb = pb->next;
+    }
+    // 使用循环链表更为方便
     return C;
 }
 
@@ -104,14 +117,14 @@ LinkList mixLinkList(LinkList A, LinkList B)
 
 - (void)testLinkList_10 {
     
-    LinkList A = creatLinkListA_10(5);
+    LinkList A = creatLinkListA_10(15);
     printLinkList_10(A);
     
-    LinkList B = creatLinkListB_10(8);
+    LinkList B = creatLinkListB_10(18);
     printLinkList_10(B);
     
-//    LinkList C = mixLinkList(A, B);
-//    printLinkList_10(C);
+    LinkList C = mixLinkList(A, B);
+    printLinkList_10(C);
     
 }
 
