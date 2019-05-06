@@ -89,6 +89,7 @@
 		20CFE5622213B50300B9C132 /* MeatFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CFE5612213B50300B9C132 /* MeatFactory.m */; };
 		20E020362202E82A0037BE1F /* GKURLSessionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E020352202E82A0037BE1F /* GKURLSessionViewController.m */; };
 		20E4FF2022804F6D00FDC596 /* SeqStackTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E4FF1F22804F6D00FDC596 /* SeqStackTests.m */; };
+		20E4FF2222805C6800FDC596 /* LinkStackTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E4FF2122805C6800FDC596 /* LinkStackTests.m */; };
 		63975EAF22654823001BE6D3 /* SeqListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 63975EAE22654823001BE6D3 /* SeqListTests.m */; };
 /* End PBXBuildFile section */
 
@@ -264,6 +265,7 @@
 		20E020342202E82A0037BE1F /* GKURLSessionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GKURLSessionViewController.h; sourceTree = "<group>"; };
 		20E020352202E82A0037BE1F /* GKURLSessionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GKURLSessionViewController.m; sourceTree = "<group>"; };
 		20E4FF1F22804F6D00FDC596 /* SeqStackTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SeqStackTests.m; sourceTree = "<group>"; };
+		20E4FF2122805C6800FDC596 /* LinkStackTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LinkStackTests.m; sourceTree = "<group>"; };
 		63975EAE22654823001BE6D3 /* SeqListTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SeqListTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -722,6 +724,7 @@
 			isa = PBXGroup;
 			children = (
 				20E4FF1F22804F6D00FDC596 /* SeqStackTests.m */,
+				20E4FF2122805C6800FDC596 /* LinkStackTests.m */,
 			);
 			path = Stack;
 			sourceTree = "<group>";
@@ -833,6 +836,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20E4FF2222805C6800FDC596 /* LinkStackTests.m in Sources */,
 				204A59B62233A64600A2EC24 /* DateTests.m in Sources */,
 				2043DDF522708799004EA85A /* LinkListTests.m in Sources */,
 				20B16D5C226434BC00FE5DC9 /* StringTests.m in Sources */,

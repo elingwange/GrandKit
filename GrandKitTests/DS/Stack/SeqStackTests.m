@@ -12,7 +12,7 @@
 
 #define StackSize 100
 typedef char DataType;
-typedef struct stack {
+typedef struct {
     DataType data[StackSize];
     int top;
 } SeqStack;
@@ -78,7 +78,7 @@ void printSeqStack(SeqStack *stack) {
 
 @implementation SeqStackTests
 
-- (void)testStack {
+- (void)testSeqStack {
     SeqStack stack;
     stackEmpty(&stack);
     printSeqStack(&stack);
