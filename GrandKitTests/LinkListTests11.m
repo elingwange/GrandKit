@@ -57,15 +57,24 @@ void printLinkList_11(LinkList list) {
 }
 
 
-void insertDLLinkList(LinkList list, DataType x, int position) {
+void insertDLLinkList(LinkList list, DataType x, DataType y)
+{
+    ListNode *p = list->next;
     
-    ListNode *p = list;
-    
-    while (p->next != list)
+    while (p != list)
     {
-        
+        if (p->data == x)
+        {
+            ListNode *node = (ListNode *)malloc(sizeof(ListNode));
+            node->data = y;
+            p->prior->next = node;
+            node->prior = p->prior;
+            p->prior = node;
+            node->next = p;
+            break;
+        }
+        p = p->next;
     }
-    
 }
 
 
@@ -75,7 +84,7 @@ void insertDLLinkList(LinkList list, DataType x, int position) {
     LinkList A = creatLinkListA_11(13);
     printLinkList_11(A);
     
-    insertDLLinkList(A, 99, 9);
+    insertDLLinkList(A, 9, 99);
     printLinkList_11(A);
 }
 
