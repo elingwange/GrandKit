@@ -33,7 +33,17 @@ LinkStack pushLinkStack(LinkStack top, DataType x) {
     return top;
 }
 
+/** 出栈 */
+LinkStack popLinkStack(LinkStack top, DataType *x) {
+    
+    LinkStack s = top;
+    *x = s->data; // 保存删除节点值，并带回
+    top = top->next;
+    free(s);
+    return top;
+}
 
+/** 打印链栈 */
 void printLinkStack(LinkStack s) {
     StackNode *p = s;
     while(p->next != NULL)
@@ -58,8 +68,14 @@ void printLinkStack(LinkStack s) {
     firstNode->next = NULL;
     printLinkStack(firstNode);
     
-    LinkStack s = pushLinkStack(firstNode, 9);
+    LinkStack s = pushLinkStack(firstNode, 2);
+    s = pushLinkStack(s, 3);
     printLinkStack(s);
+    
+    DataType *x;
+    s = popLinkStack(s, x);
+    printLinkStack(s);
+    NSLog(@"Tag %d", &x);
     
 }
 
