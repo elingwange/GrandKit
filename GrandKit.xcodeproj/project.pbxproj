@@ -88,6 +88,7 @@
 		20CFE55E2213B1B100B9C132 /* GKDelegateBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CFE55D2213B1B100B9C132 /* GKDelegateBaseViewController.m */; };
 		20CFE5622213B50300B9C132 /* MeatFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CFE5612213B50300B9C132 /* MeatFactory.m */; };
 		20E020362202E82A0037BE1F /* GKURLSessionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E020352202E82A0037BE1F /* GKURLSessionViewController.m */; };
+		20E4FF2022804F6D00FDC596 /* SeqStackTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E4FF1F22804F6D00FDC596 /* SeqStackTests.m */; };
 		63975EAF22654823001BE6D3 /* SeqListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 63975EAE22654823001BE6D3 /* SeqListTests.m */; };
 /* End PBXBuildFile section */
 
@@ -262,6 +263,7 @@
 		20CFE5612213B50300B9C132 /* MeatFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeatFactory.m; sourceTree = "<group>"; };
 		20E020342202E82A0037BE1F /* GKURLSessionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GKURLSessionViewController.h; sourceTree = "<group>"; };
 		20E020352202E82A0037BE1F /* GKURLSessionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GKURLSessionViewController.m; sourceTree = "<group>"; };
+		20E4FF1F22804F6D00FDC596 /* SeqStackTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SeqStackTests.m; sourceTree = "<group>"; };
 		63975EAE22654823001BE6D3 /* SeqListTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SeqListTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -332,15 +334,12 @@
 		204A59A822339CDB00A2EC24 /* GrandKitTests */ = {
 			isa = PBXGroup;
 			children = (
+				20E4FF1C22804ECE00FDC596 /* DS */,
 				204A59AB22339CDB00A2EC24 /* Info.plist */,
 				204A59B52233A64600A2EC24 /* DateTests.m */,
 				204A59B72233A87900A2EC24 /* DateComponentsTests.m */,
 				204A59B92233AEE800A2EC24 /* CalendarTests.m */,
 				20B16D5B226434BC00FE5DC9 /* StringTests.m */,
-				63975EAE22654823001BE6D3 /* SeqListTests.m */,
-				2043DDF422708799004EA85A /* LinkListTests.m */,
-				204D826E2275C82700416509 /* LinkListTests10.m */,
-				204F7AF72278661A003685B4 /* LinkListTests11.m */,
 			);
 			path = GrandKitTests;
 			sourceTree = "<group>";
@@ -699,6 +698,34 @@
 			path = Delegate;
 			sourceTree = "<group>";
 		};
+		20E4FF1C22804ECE00FDC596 /* DS */ = {
+			isa = PBXGroup;
+			children = (
+				20E4FF1D22804EED00FDC596 /* LinkList */,
+				20E4FF1E22804F5100FDC596 /* Stack */,
+			);
+			path = DS;
+			sourceTree = "<group>";
+		};
+		20E4FF1D22804EED00FDC596 /* LinkList */ = {
+			isa = PBXGroup;
+			children = (
+				63975EAE22654823001BE6D3 /* SeqListTests.m */,
+				2043DDF422708799004EA85A /* LinkListTests.m */,
+				204D826E2275C82700416509 /* LinkListTests10.m */,
+				204F7AF72278661A003685B4 /* LinkListTests11.m */,
+			);
+			path = LinkList;
+			sourceTree = "<group>";
+		};
+		20E4FF1E22804F5100FDC596 /* Stack */ = {
+			isa = PBXGroup;
+			children = (
+				20E4FF1F22804F6D00FDC596 /* SeqStackTests.m */,
+			);
+			path = Stack;
+			sourceTree = "<group>";
+		};
 		20F6A30B224C75F900F6A104 /* Null */ = {
 			isa = PBXGroup;
 			children = (
@@ -813,6 +840,7 @@
 				63975EAF22654823001BE6D3 /* SeqListTests.m in Sources */,
 				204A59B82233A87900A2EC24 /* DateComponentsTests.m in Sources */,
 				204A59BA2233AEE800A2EC24 /* CalendarTests.m in Sources */,
+				20E4FF2022804F6D00FDC596 /* SeqStackTests.m in Sources */,
 				204D826F2275C82700416509 /* LinkListTests10.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

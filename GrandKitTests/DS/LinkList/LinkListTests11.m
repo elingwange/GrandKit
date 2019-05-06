@@ -30,6 +30,9 @@ typedef struct node {
 
 @implementation LinkListTests11
 
+/**
+ 创建双向循环链表
+ */
 LinkList creatLinkListA_11(int n) {
     ListNode *head, *tail;
     head = (ListNode *)malloc(sizeof(ListNode));
@@ -84,7 +87,7 @@ void insertDLLinkList(LinkList list, DataType x, DataType y)
     LinkList A = creatLinkListA_11(13);
     printLinkList_11(A);
     
-    insertDLLinkList(A, 9, 99);
+    insertDLLinkList(A, 12, 99);
     printLinkList_11(A);
 }
 
