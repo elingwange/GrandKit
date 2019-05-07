@@ -72,10 +72,10 @@ void printLinkStack(LinkStack s) {
     s = pushLinkStack(s, 3);
     printLinkStack(s);
     
-    DataType *x;
-    s = popLinkStack(s, x);
+    DataType x;
+    s = popLinkStack(s, &x);
     printLinkStack(s);
-    NSLog(@"Tag %d", &x);
+    NSLog(@"Tag %d", x);
     
 }
 

@@ -90,6 +90,7 @@
 		20E020362202E82A0037BE1F /* GKURLSessionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E020352202E82A0037BE1F /* GKURLSessionViewController.m */; };
 		20E4FF2022804F6D00FDC596 /* SeqStackTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E4FF1F22804F6D00FDC596 /* SeqStackTests.m */; };
 		20E4FF2222805C6800FDC596 /* LinkStackTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E4FF2122805C6800FDC596 /* LinkStackTests.m */; };
+		20E4FF242281A08F00FDC596 /* LinkStackTests10.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E4FF232281A08F00FDC596 /* LinkStackTests10.m */; };
 		63975EAF22654823001BE6D3 /* SeqListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 63975EAE22654823001BE6D3 /* SeqListTests.m */; };
 /* End PBXBuildFile section */
 
@@ -266,6 +267,7 @@
 		20E020352202E82A0037BE1F /* GKURLSessionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GKURLSessionViewController.m; sourceTree = "<group>"; };
 		20E4FF1F22804F6D00FDC596 /* SeqStackTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SeqStackTests.m; sourceTree = "<group>"; };
 		20E4FF2122805C6800FDC596 /* LinkStackTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LinkStackTests.m; sourceTree = "<group>"; };
+		20E4FF232281A08F00FDC596 /* LinkStackTests10.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LinkStackTests10.m; sourceTree = "<group>"; };
 		63975EAE22654823001BE6D3 /* SeqListTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SeqListTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -725,6 +727,7 @@
 			children = (
 				20E4FF1F22804F6D00FDC596 /* SeqStackTests.m */,
 				20E4FF2122805C6800FDC596 /* LinkStackTests.m */,
+				20E4FF232281A08F00FDC596 /* LinkStackTests10.m */,
 			);
 			path = Stack;
 			sourceTree = "<group>";
@@ -836,6 +839,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20E4FF242281A08F00FDC596 /* LinkStackTests10.m in Sources */,
 				20E4FF2222805C6800FDC596 /* LinkStackTests.m in Sources */,
 				204A59B62233A64600A2EC24 /* DateTests.m in Sources */,
 				2043DDF522708799004EA85A /* LinkListTests.m in Sources */,
