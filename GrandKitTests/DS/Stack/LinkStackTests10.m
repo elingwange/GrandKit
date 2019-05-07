@@ -52,7 +52,9 @@ DataType getTop_10(SeqStack *stack) {
 
 
 /*
- 判断是否是回文，如 ababbaba, abcba
+ 1-判断是否是回文，如 ababbaba, abcba
+ 
+ 2-阶乘
  */
 
 
@@ -78,15 +80,51 @@ int sysmetry(char str[]) {
     return 1;
 }
 
-
 - (void)testLinkStack_10 {
     
-    char str[] = "fababaaebabaf";
+    char str[] = "fababaababaf";
     if (sysmetry(str)) {
         NSLog(@"Tag 是回文");
     } else {
         NSLog(@"Tag 不是回文");
     }
+}
+
+
+/*
+ n!
+ */
+int fact(int n) {
+    int temp;
+    if (n == 0)
+        return 1;
+    else
+        temp = n * fact(n - 1);
+r12: return temp;
+}
+
+- (void)testFact {
+    int n = fact(3);
+rl1: NSLog(@"Tag 3! = %d", n);
+}
+
+
+/*
+         n + 1  (n<2)
+ fu() =
+         fu(n/2) * fu(n/4)  (n>=2)
+ */
+float fu(int n) {
+    if (n < 2)
+        return (n + 1);
+    else
+        return fu(n / 2) * fu(n / 4);
+}
+
+- (void)testFu {
+    int n = 3;
+    float result = fu(n);
+    NSLog(@"Tag %f", result);
 }
 
 @end
