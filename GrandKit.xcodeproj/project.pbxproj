@@ -91,6 +91,7 @@
 		20E4FF2022804F6D00FDC596 /* SeqStackTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E4FF1F22804F6D00FDC596 /* SeqStackTests.m */; };
 		20E4FF2222805C6800FDC596 /* LinkStackTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E4FF2122805C6800FDC596 /* LinkStackTests.m */; };
 		20E4FF242281A08F00FDC596 /* LinkStackTests10.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E4FF232281A08F00FDC596 /* LinkStackTests10.m */; };
+		20E4FF292282ED9600FDC596 /* CircleQueueTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E4FF282282ED9600FDC596 /* CircleQueueTests.m */; };
 		63975EAF22654823001BE6D3 /* SeqListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 63975EAE22654823001BE6D3 /* SeqListTests.m */; };
 /* End PBXBuildFile section */
 
@@ -268,6 +269,7 @@
 		20E4FF1F22804F6D00FDC596 /* SeqStackTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SeqStackTests.m; sourceTree = "<group>"; };
 		20E4FF2122805C6800FDC596 /* LinkStackTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LinkStackTests.m; sourceTree = "<group>"; };
 		20E4FF232281A08F00FDC596 /* LinkStackTests10.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LinkStackTests10.m; sourceTree = "<group>"; };
+		20E4FF282282ED9600FDC596 /* CircleQueueTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircleQueueTests.m; sourceTree = "<group>"; };
 		63975EAE22654823001BE6D3 /* SeqListTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SeqListTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -705,6 +707,7 @@
 		20E4FF1C22804ECE00FDC596 /* DS */ = {
 			isa = PBXGroup;
 			children = (
+				20E4FF272282ED6E00FDC596 /* Queue */,
 				20E4FF1D22804EED00FDC596 /* LinkList */,
 				20E4FF1E22804F5100FDC596 /* Stack */,
 			);
@@ -730,6 +733,14 @@
 				20E4FF232281A08F00FDC596 /* LinkStackTests10.m */,
 			);
 			path = Stack;
+			sourceTree = "<group>";
+		};
+		20E4FF272282ED6E00FDC596 /* Queue */ = {
+			isa = PBXGroup;
+			children = (
+				20E4FF282282ED9600FDC596 /* CircleQueueTests.m */,
+			);
+			path = Queue;
 			sourceTree = "<group>";
 		};
 		20F6A30B224C75F900F6A104 /* Null */ = {
@@ -842,6 +853,7 @@
 				20E4FF242281A08F00FDC596 /* LinkStackTests10.m in Sources */,
 				20E4FF2222805C6800FDC596 /* LinkStackTests.m in Sources */,
 				204A59B62233A64600A2EC24 /* DateTests.m in Sources */,
+				20E4FF292282ED9600FDC596 /* CircleQueueTests.m in Sources */,
 				2043DDF522708799004EA85A /* LinkListTests.m in Sources */,
 				20B16D5C226434BC00FE5DC9 /* StringTests.m in Sources */,
 				204F7AF82278661A003685B4 /* LinkListTests11.m in Sources */,
