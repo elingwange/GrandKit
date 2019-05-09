@@ -87,6 +87,7 @@
 		20CFE55A2212C45F00B9C132 /* GKAFNUploadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CFE5592212C45F00B9C132 /* GKAFNUploadViewController.m */; };
 		20CFE55E2213B1B100B9C132 /* GKDelegateBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CFE55D2213B1B100B9C132 /* GKDelegateBaseViewController.m */; };
 		20CFE5622213B50300B9C132 /* MeatFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CFE5612213B50300B9C132 /* MeatFactory.m */; };
+		20D78B952284396F00D31BFA /* CircleLinkQueueTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D78B942284396F00D31BFA /* CircleLinkQueueTests.m */; };
 		20E020362202E82A0037BE1F /* GKURLSessionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E020352202E82A0037BE1F /* GKURLSessionViewController.m */; };
 		20E4FF2022804F6D00FDC596 /* SeqStackTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E4FF1F22804F6D00FDC596 /* SeqStackTests.m */; };
 		20E4FF2222805C6800FDC596 /* LinkStackTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E4FF2122805C6800FDC596 /* LinkStackTests.m */; };
@@ -264,6 +265,7 @@
 		20CFE55D2213B1B100B9C132 /* GKDelegateBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GKDelegateBaseViewController.m; sourceTree = "<group>"; };
 		20CFE5602213B50300B9C132 /* MeatFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MeatFactory.h; sourceTree = "<group>"; };
 		20CFE5612213B50300B9C132 /* MeatFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeatFactory.m; sourceTree = "<group>"; };
+		20D78B942284396F00D31BFA /* CircleLinkQueueTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircleLinkQueueTests.m; sourceTree = "<group>"; };
 		20E020342202E82A0037BE1F /* GKURLSessionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GKURLSessionViewController.h; sourceTree = "<group>"; };
 		20E020352202E82A0037BE1F /* GKURLSessionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GKURLSessionViewController.m; sourceTree = "<group>"; };
 		20E4FF1F22804F6D00FDC596 /* SeqStackTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SeqStackTests.m; sourceTree = "<group>"; };
@@ -739,6 +741,7 @@
 			isa = PBXGroup;
 			children = (
 				20E4FF282282ED9600FDC596 /* CircleQueueTests.m */,
+				20D78B942284396F00D31BFA /* CircleLinkQueueTests.m */,
 			);
 			path = Queue;
 			sourceTree = "<group>";
@@ -858,6 +861,7 @@
 				20B16D5C226434BC00FE5DC9 /* StringTests.m in Sources */,
 				204F7AF82278661A003685B4 /* LinkListTests11.m in Sources */,
 				63975EAF22654823001BE6D3 /* SeqListTests.m in Sources */,
+				20D78B952284396F00D31BFA /* CircleLinkQueueTests.m in Sources */,
 				204A59B82233A87900A2EC24 /* DateComponentsTests.m in Sources */,
 				204A59BA2233AEE800A2EC24 /* CalendarTests.m in Sources */,
 				20E4FF2022804F6D00FDC596 /* SeqStackTests.m in Sources */,
