@@ -31,24 +31,31 @@ QueueNode * initCLQueue(QueueNode *rear) {
 }
 
 /** 入队列 */
-void enqueueCLQueue(QueueNode *rear, DataType x) {
+QueueNode * enqueueCLQueue(QueueNode *rear, DataType x) {
     QueueNode *s = (QueueNode *)malloc(sizeof(QueueNode));
     s->data = x;
     s->next = rear->next;
     rear->next = s;
     rear = s;
+    return rear;
 }
 
 /** 出队列 */
-void dequeueCLQueue(QueueNode *rear, DataType x) {
+void dequeueCLQueue(QueueNode *rear, DataType *x) {
     
-    
-    
+    QueueNode *p = rear->next; // 指向头节点
+    if (p->next == p) {
+        // 如果头节点的next指针指向自己，则表明空队列
+    }
+    QueueNode *temp = p->next;
+    p->next = p->next->next;
+    *x = temp->data;
+    free(temp);
 }
 
 
 void printCLQueue(QueueNode *rear) {
-    QueueNode *p = rear->next;
+    QueueNode *p = rear->next->next;
     while (p->data != 0) {
         NSLog(@"Tag %c", p->data);
         p = p->next;
@@ -61,13 +68,17 @@ void printCLQueue(QueueNode *rear) {
 
 - (void)testCircleLinkQueue {
     
-    QueueNode *rear;
-    QueueNode *p = initCLQueue(rear);
+    QueueNode rear;
+    QueueNode *p = initCLQueue(&rear);
     
-    enqueueCLQueue(p, 'A');
-    enqueueCLQueue(p, 'B');
-//    enqueueCLQueue(p, 'C');
-//    enqueueCLQueue(p, 'D');
+    p = enqueueCLQueue(p, 'A');
+    p = enqueueCLQueue(p, 'B');
+    p = enqueueCLQueue(p, 'C');
+    p = enqueueCLQueue(p, 'D');
+    printCLQueue(p);
+    
+    DataType x;
+    dequeueCLQueue(p, &x);
     printCLQueue(p);
 }
 
