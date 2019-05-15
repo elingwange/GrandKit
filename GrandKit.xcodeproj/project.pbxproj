@@ -68,6 +68,7 @@
 		207880B021F5920E0030D4F5 /* NSString+EFCom.m in Sources */ = {isa = PBXBuildFile; fileRef = 207880AF21F5920E0030D4F5 /* NSString+EFCom.m */; };
 		2096F2B721F88388008DC254 /* GKSocketHttpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2096F2B621F88388008DC254 /* GKSocketHttpViewController.m */; };
 		20B16D5C226434BC00FE5DC9 /* StringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20B16D5B226434BC00FE5DC9 /* StringTests.m */; };
+		20B5FDFE228C0DB9003CFC17 /* CircleSeqQueueTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20B5FDFD228C0DB9003CFC17 /* CircleSeqQueueTests.m */; };
 		20CFE5262211292400B9C132 /* RainbowProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CFE5252211292400B9C132 /* RainbowProgress.m */; };
 		20CFE52A22113F7600B9C132 /* GKURLSessionDeligateDownloadResumeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CFE52922113F7600B9C132 /* GKURLSessionDeligateDownloadResumeViewController.m */; };
 		20CFE52D2211430700B9C132 /* UIButton+Com.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CFE52C2211430700B9C132 /* UIButton+Com.m */; };
@@ -226,6 +227,7 @@
 		2096F2B521F88388008DC254 /* GKSocketHttpViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GKSocketHttpViewController.h; sourceTree = "<group>"; };
 		2096F2B621F88388008DC254 /* GKSocketHttpViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GKSocketHttpViewController.m; sourceTree = "<group>"; };
 		20B16D5B226434BC00FE5DC9 /* StringTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StringTests.m; sourceTree = "<group>"; };
+		20B5FDFD228C0DB9003CFC17 /* CircleSeqQueueTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircleSeqQueueTests.m; sourceTree = "<group>"; };
 		20CFE5242211292400B9C132 /* RainbowProgress.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RainbowProgress.h; sourceTree = "<group>"; };
 		20CFE5252211292400B9C132 /* RainbowProgress.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RainbowProgress.m; sourceTree = "<group>"; };
 		20CFE52822113F7600B9C132 /* GKURLSessionDeligateDownloadResumeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GKURLSessionDeligateDownloadResumeViewController.h; sourceTree = "<group>"; };
@@ -742,6 +744,7 @@
 			children = (
 				20E4FF282282ED9600FDC596 /* CircleQueueTests.m */,
 				20D78B942284396F00D31BFA /* CircleLinkQueueTests.m */,
+				20B5FDFD228C0DB9003CFC17 /* CircleSeqQueueTests.m */,
 			);
 			path = Queue;
 			sourceTree = "<group>";
@@ -859,6 +862,7 @@
 				20E4FF292282ED9600FDC596 /* CircleQueueTests.m in Sources */,
 				2043DDF522708799004EA85A /* LinkListTests.m in Sources */,
 				20B16D5C226434BC00FE5DC9 /* StringTests.m in Sources */,
+				20B5FDFE228C0DB9003CFC17 /* CircleSeqQueueTests.m in Sources */,
 				204F7AF82278661A003685B4 /* LinkListTests11.m in Sources */,
 				63975EAF22654823001BE6D3 /* SeqListTests.m in Sources */,
 				20D78B952284396F00D31BFA /* CircleLinkQueueTests.m in Sources */,
