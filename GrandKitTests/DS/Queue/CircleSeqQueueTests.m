@@ -60,8 +60,9 @@ CircleSeqQueue * enqueueCSQ(CircleSeqQueue *queue, DataType x) {
  */
 int lengthCSQ(CircleSeqQueue *queue) {
     
-    // （rear - front + QueueSize）% QueueSize
-    
+    // (rear + size ~ top) % size
+    // ~ 位运算符，取反
+    short result = ~3;
     
     
     
