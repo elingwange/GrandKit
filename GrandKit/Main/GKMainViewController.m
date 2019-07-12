@@ -66,7 +66,8 @@
     
     GKPoint *point61 = [GKPoint initWithName:@"ImagePicker Default" andClass:@"EFImagePickerViewController2"];
     GKPoint *point62 = [GKPoint initWithName:@"ImagePicker Custom" andClass:@"ImagePickerDemoViewController"];
-    GKGroup *group6 = [GKGroup initWithName:@"UI" andDetail:@"" andPoints:[NSMutableArray arrayWithObjects:point61, point62, nil]];
+    GKPoint *point63 = [GKPoint initWithName:@"WebView" andClass:@"SLWebViewController"];
+    GKGroup *group6 = [GKGroup initWithName:@"UI" andDetail:@"" andPoints:[NSMutableArray arrayWithObjects:point61, point62, point63, nil]];
     [_groupArray addObject:group6];
     
     GKPoint *point1 = [GKPoint initWithName:@"Base" andClass:@"GKSocketBaseViewController"];

@@ -96,6 +96,13 @@
 		20E4FF292282ED9600FDC596 /* CircleQueueTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E4FF282282ED9600FDC596 /* CircleQueueTests.m */; };
 		6321FD5C22A0054900A51BC7 /* MatrixTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6321FD5B22A0054900A51BC7 /* MatrixTests.m */; };
 		63975EAF22654823001BE6D3 /* SeqListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 63975EAE22654823001BE6D3 /* SeqListTests.m */; };
+		639FCCA722D87A10009BD9EE /* SLWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 639FCCA622D87A10009BD9EE /* SLWebViewController.m */; };
+		639FCCB222D880E7009BD9EE /* backbutton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 639FCCAF22D87C56009BD9EE /* backbutton@2x.png */; };
+		639FCCB322D880E7009BD9EE /* backbutton@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 639FCCAE22D87C56009BD9EE /* backbutton@3x.png */; };
+		639FCCB422D880E7009BD9EE /* girl.png in Resources */ = {isa = PBXBuildFile; fileRef = 639FCCB122D87C56009BD9EE /* girl.png */; };
+		639FCCB522D880E7009BD9EE /* JStoOC.html in Resources */ = {isa = PBXBuildFile; fileRef = 639FCCAC22D87C56009BD9EE /* JStoOC.html */; };
+		639FCCB622D880E7009BD9EE /* webRefreshButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 639FCCAD22D87C56009BD9EE /* webRefreshButton@2x.png */; };
+		639FCCB722D880E7009BD9EE /* webRefreshButton@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 639FCCB022D87C56009BD9EE /* webRefreshButton@3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -277,6 +284,15 @@
 		20E4FF282282ED9600FDC596 /* CircleQueueTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircleQueueTests.m; sourceTree = "<group>"; };
 		6321FD5B22A0054900A51BC7 /* MatrixTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MatrixTests.m; sourceTree = "<group>"; };
 		63975EAE22654823001BE6D3 /* SeqListTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SeqListTests.m; sourceTree = "<group>"; };
+		639FCCA522D87A10009BD9EE /* SLWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLWebViewController.h; sourceTree = "<group>"; };
+		639FCCA622D87A10009BD9EE /* SLWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLWebViewController.m; sourceTree = "<group>"; };
+		639FCCA822D87A47009BD9EE /* SLPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLPrefixHeader.pch; sourceTree = "<group>"; };
+		639FCCAC22D87C56009BD9EE /* JStoOC.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = JStoOC.html; sourceTree = "<group>"; };
+		639FCCAD22D87C56009BD9EE /* webRefreshButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "webRefreshButton@2x.png"; sourceTree = "<group>"; };
+		639FCCAE22D87C56009BD9EE /* backbutton@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "backbutton@3x.png"; sourceTree = "<group>"; };
+		639FCCAF22D87C56009BD9EE /* backbutton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "backbutton@2x.png"; sourceTree = "<group>"; };
+		639FCCB022D87C56009BD9EE /* webRefreshButton@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "webRefreshButton@3x.png"; sourceTree = "<group>"; };
+		639FCCB122D87C56009BD9EE /* girl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = girl.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -621,6 +637,7 @@
 		20CFE521221128DE00B9C132 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				639FCCA422D879E4009BD9EE /* WebView */,
 				20639523225AE08300F0D4D7 /* ImagePicker */,
 				20CFE522221128E600B9C132 /* Progress */,
 			);
@@ -767,6 +784,30 @@
 			path = Table;
 			sourceTree = "<group>";
 		};
+		639FCCA422D879E4009BD9EE /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				639FCCA922D87A7A009BD9EE /* Resource */,
+				639FCCA522D87A10009BD9EE /* SLWebViewController.h */,
+				639FCCA622D87A10009BD9EE /* SLWebViewController.m */,
+				639FCCA822D87A47009BD9EE /* SLPrefixHeader.pch */,
+			);
+			path = WebView;
+			sourceTree = "<group>";
+		};
+		639FCCA922D87A7A009BD9EE /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				639FCCAF22D87C56009BD9EE /* backbutton@2x.png */,
+				639FCCAE22D87C56009BD9EE /* backbutton@3x.png */,
+				639FCCB122D87C56009BD9EE /* girl.png */,
+				639FCCAC22D87C56009BD9EE /* JStoOC.html */,
+				639FCCAD22D87C56009BD9EE /* webRefreshButton@2x.png */,
+				639FCCB022D87C56009BD9EE /* webRefreshButton@3x.png */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -854,6 +895,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				639FCCB222D880E7009BD9EE /* backbutton@2x.png in Resources */,
+				639FCCB322D880E7009BD9EE /* backbutton@3x.png in Resources */,
+				639FCCB422D880E7009BD9EE /* girl.png in Resources */,
+				639FCCB522D880E7009BD9EE /* JStoOC.html in Resources */,
+				639FCCB622D880E7009BD9EE /* webRefreshButton@2x.png in Resources */,
+				639FCCB722D880E7009BD9EE /* webRefreshButton@3x.png in Resources */,
 				206C3F2521F181F40000F116 /* LaunchScreen.storyboard in Resources */,
 				206C3F2221F181F40000F116 /* Assets.xcassets in Resources */,
 				206C3F5421F3069A0000F116 /* note in Resources */,
@@ -925,6 +972,7 @@
 				2063955A225B188400F0D4D7 /* DNSendButton.m in Sources */,
 				20639553225B188400F0D4D7 /* DNImageFetchOperation.m in Sources */,
 				20CFE5562212BF1D00B9C132 /* AFNetworkReachabilityManager.m in Sources */,
+				639FCCA722D87A10009BD9EE /* SLWebViewController.m in Sources */,
 				204A59B42233A05700A2EC24 /* CalendarUtil.m in Sources */,
 				20560E9F21FC0613000B927F /* GKURLConnectionDeligateDownload2ViewController.m in Sources */,
 				20639558225B188400F0D4D7 /* DNAlbumCell.m in Sources */,
