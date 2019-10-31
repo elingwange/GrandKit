@@ -224,18 +224,11 @@
         _webView.navigationDelegate = self;
         // 是否允许手势左滑返回上一级, 类似导航控制的左滑返回
         _webView.allowsBackForwardNavigationGestures = YES;
-        //可返回的页面列表, 存储已打开过的网页
-        WKBackForwardList * backForwardList = [_webView backForwardList];
         
-        //        NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"http://www.chinadaily.com.cn"]];
-        //        [request addValue:[self readCurrentCookieWithDomain:@"http://www.chinadaily.com.cn"] forHTTPHeaderField:@"Cookie"];
-        //        [_webView loadRequest:request];
-        
-        
-        NSString *path = [[NSBundle mainBundle] pathForResource:@"JStoOC.html" ofType:nil];
-        NSString *htmlString = [[NSString alloc]initWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
-        [_webView loadHTMLString:htmlString baseURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] bundlePath]]];
-        
+        NSString *urlString = @"http://www.wulihub.com.cn/go/qg0o5W/index.html";
+//        urlString = @"https://m.coinka.cn/invite/";
+        NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:urlString]];
+        [_webView loadRequest:request];
     }
     return _webView;
 }

@@ -95,6 +95,10 @@
 		20E4FF242281A08F00FDC596 /* LinkStackTests10.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E4FF232281A08F00FDC596 /* LinkStackTests10.m */; };
 		20E4FF292282ED9600FDC596 /* CircleQueueTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E4FF282282ED9600FDC596 /* CircleQueueTests.m */; };
 		6321FD5C22A0054900A51BC7 /* MatrixTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6321FD5B22A0054900A51BC7 /* MatrixTests.m */; };
+		63489780231F8E840048EC6B /* TreeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6348977F231F8E840048EC6B /* TreeView.m */; };
+		63489783231F8EE80048EC6B /* MiningViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63489782231F8EE80048EC6B /* MiningViewController.m */; };
+		63489786231F90450048EC6B /* LeafView.m in Sources */ = {isa = PBXBuildFile; fileRef = 63489785231F90450048EC6B /* LeafView.m */; };
+		6355FE6A2330D3C000E9BBCC /* UIView+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 6355FE692330D3C000E9BBCC /* UIView+Common.m */; };
 		63975EAF22654823001BE6D3 /* SeqListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 63975EAE22654823001BE6D3 /* SeqListTests.m */; };
 		639FCCA722D87A10009BD9EE /* SLWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 639FCCA622D87A10009BD9EE /* SLWebViewController.m */; };
 		639FCCB222D880E7009BD9EE /* backbutton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 639FCCAF22D87C56009BD9EE /* backbutton@2x.png */; };
@@ -103,6 +107,7 @@
 		639FCCB522D880E7009BD9EE /* JStoOC.html in Resources */ = {isa = PBXBuildFile; fileRef = 639FCCAC22D87C56009BD9EE /* JStoOC.html */; };
 		639FCCB622D880E7009BD9EE /* webRefreshButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 639FCCAD22D87C56009BD9EE /* webRefreshButton@2x.png */; };
 		639FCCB722D880E7009BD9EE /* webRefreshButton@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 639FCCB022D87C56009BD9EE /* webRefreshButton@3x.png */; };
+		63F44EB02321ED7100D78B5D /* LeafInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F44EAF2321ED7000D78B5D /* LeafInfoModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -283,6 +288,14 @@
 		20E4FF232281A08F00FDC596 /* LinkStackTests10.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LinkStackTests10.m; sourceTree = "<group>"; };
 		20E4FF282282ED9600FDC596 /* CircleQueueTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircleQueueTests.m; sourceTree = "<group>"; };
 		6321FD5B22A0054900A51BC7 /* MatrixTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MatrixTests.m; sourceTree = "<group>"; };
+		6348977E231F8E840048EC6B /* TreeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TreeView.h; sourceTree = "<group>"; };
+		6348977F231F8E840048EC6B /* TreeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TreeView.m; sourceTree = "<group>"; };
+		63489781231F8EE80048EC6B /* MiningViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MiningViewController.h; sourceTree = "<group>"; };
+		63489782231F8EE80048EC6B /* MiningViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MiningViewController.m; sourceTree = "<group>"; };
+		63489784231F90450048EC6B /* LeafView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeafView.h; sourceTree = "<group>"; };
+		63489785231F90450048EC6B /* LeafView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeafView.m; sourceTree = "<group>"; };
+		6355FE682330D3C000E9BBCC /* UIView+Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Common.h"; sourceTree = "<group>"; };
+		6355FE692330D3C000E9BBCC /* UIView+Common.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Common.m"; sourceTree = "<group>"; };
 		63975EAE22654823001BE6D3 /* SeqListTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SeqListTests.m; sourceTree = "<group>"; };
 		639FCCA522D87A10009BD9EE /* SLWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLWebViewController.h; sourceTree = "<group>"; };
 		639FCCA622D87A10009BD9EE /* SLWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLWebViewController.m; sourceTree = "<group>"; };
@@ -293,6 +306,8 @@
 		639FCCAF22D87C56009BD9EE /* backbutton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "backbutton@2x.png"; sourceTree = "<group>"; };
 		639FCCB022D87C56009BD9EE /* webRefreshButton@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "webRefreshButton@3x.png"; sourceTree = "<group>"; };
 		639FCCB122D87C56009BD9EE /* girl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = girl.png; sourceTree = "<group>"; };
+		63F44EAE2321ED7000D78B5D /* LeafInfoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeafInfoModel.h; sourceTree = "<group>"; };
+		63F44EAF2321ED7000D78B5D /* LeafInfoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeafInfoModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -617,6 +632,8 @@
 				207880AF21F5920E0030D4F5 /* NSString+EFCom.m */,
 				20CFE52B2211430700B9C132 /* UIButton+Com.h */,
 				20CFE52C2211430700B9C132 /* UIButton+Com.m */,
+				6355FE682330D3C000E9BBCC /* UIView+Common.h */,
+				6355FE692330D3C000E9BBCC /* UIView+Common.m */,
 			);
 			path = Categary;
 			sourceTree = "<group>";
@@ -637,6 +654,7 @@
 		20CFE521221128DE00B9C132 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				6348977D231F8E640048EC6B /* TreeView */,
 				639FCCA422D879E4009BD9EE /* WebView */,
 				20639523225AE08300F0D4D7 /* ImagePicker */,
 				20CFE522221128E600B9C132 /* Progress */,
@@ -782,6 +800,21 @@
 				6321FD5B22A0054900A51BC7 /* MatrixTests.m */,
 			);
 			path = Table;
+			sourceTree = "<group>";
+		};
+		6348977D231F8E640048EC6B /* TreeView */ = {
+			isa = PBXGroup;
+			children = (
+				63489784231F90450048EC6B /* LeafView.h */,
+				63489785231F90450048EC6B /* LeafView.m */,
+				6348977E231F8E840048EC6B /* TreeView.h */,
+				6348977F231F8E840048EC6B /* TreeView.m */,
+				63489781231F8EE80048EC6B /* MiningViewController.h */,
+				63489782231F8EE80048EC6B /* MiningViewController.m */,
+				63F44EAE2321ED7000D78B5D /* LeafInfoModel.h */,
+				63F44EAF2321ED7000D78B5D /* LeafInfoModel.m */,
+			);
+			path = TreeView;
 			sourceTree = "<group>";
 		};
 		639FCCA422D879E4009BD9EE /* WebView */ = {
@@ -943,6 +976,7 @@
 				20CFE52A22113F7600B9C132 /* GKURLSessionDeligateDownloadResumeViewController.m in Sources */,
 				2063952A225AE6BC00F0D4D7 /* EFImagePickerController.m in Sources */,
 				206C3F1D21F181F30000F116 /* GKMainViewController.m in Sources */,
+				63F44EB02321ED7100D78B5D /* LeafInfoModel.m in Sources */,
 				20560EA221FC0C3A000B927F /* GKURLConnectionDeligateDownload3ViewController.m in Sources */,
 				20CFE54F2212BF1D00B9C132 /* AFURLResponseSerialization.m in Sources */,
 				20CFE5392212663E00B9C132 /* EFNetworkTool.m in Sources */,
@@ -971,13 +1005,16 @@
 				20639552225B188400F0D4D7 /* DNImageFlowViewController.m in Sources */,
 				2063955A225B188400F0D4D7 /* DNSendButton.m in Sources */,
 				20639553225B188400F0D4D7 /* DNImageFetchOperation.m in Sources */,
+				63489786231F90450048EC6B /* LeafView.m in Sources */,
 				20CFE5562212BF1D00B9C132 /* AFNetworkReachabilityManager.m in Sources */,
+				63489783231F8EE80048EC6B /* MiningViewController.m in Sources */,
 				639FCCA722D87A10009BD9EE /* SLWebViewController.m in Sources */,
 				204A59B42233A05700A2EC24 /* CalendarUtil.m in Sources */,
 				20560E9F21FC0613000B927F /* GKURLConnectionDeligateDownload2ViewController.m in Sources */,
 				20639558225B188400F0D4D7 /* DNAlbumCell.m in Sources */,
 				207880AA21F570A90030D4F5 /* GKSocketChatViewController.m in Sources */,
 				203673AE22044007009DF23A /* GKGroup.m in Sources */,
+				63489780231F8E840048EC6B /* TreeView.m in Sources */,
 				203673A122042C43009DF23A /* mztools.c in Sources */,
 				206C3F5221F304C80000F116 /* UIFont+Com.m in Sources */,
 				20639576225C647D00F0D4D7 /* CropImageController.m in Sources */,
@@ -995,6 +1032,7 @@
 				20639566225B18E600F0D4D7 /* UIColor+Hex.m in Sources */,
 				2036739F22042C43009DF23A /* zip.c in Sources */,
 				206C3F3F21F1B8480000F116 /* UILabel+Manage.m in Sources */,
+				6355FE6A2330D3C000E9BBCC /* UIView+Common.m in Sources */,
 				20560E8D21F9B18E000B927F /* GKURLConnectionDeligateDownloadViewController.m in Sources */,
 				2063955E225B188400F0D4D7 /* DNAsset.m in Sources */,
 				20639557225B188400F0D4D7 /* DNUnAuthorizedTipsView.m in Sources */,
@@ -1189,6 +1227,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HZR66N7WXA;
 				GCC_PREFIX_HEADER = "GrandKit/Supporting Files/PrefixHeader.pch";
@@ -1199,6 +1238,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.evan.example.GrandKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -1207,6 +1247,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HZR66N7WXA;
 				GCC_PREFIX_HEADER = "GrandKit/Supporting Files/PrefixHeader.pch";
@@ -1217,6 +1258,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.evan.example.GrandKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
