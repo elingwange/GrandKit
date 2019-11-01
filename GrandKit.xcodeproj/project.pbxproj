@@ -99,6 +99,7 @@
 		63489783231F8EE80048EC6B /* MiningViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63489782231F8EE80048EC6B /* MiningViewController.m */; };
 		63489786231F90450048EC6B /* LeafView.m in Sources */ = {isa = PBXBuildFile; fileRef = 63489785231F90450048EC6B /* LeafView.m */; };
 		6355FE6A2330D3C000E9BBCC /* UIView+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 6355FE692330D3C000E9BBCC /* UIView+Common.m */; };
+		637FED39236BD4F9004D5AC1 /* UILabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 637FED38236BD4F9004D5AC1 /* UILabelViewController.m */; };
 		63975EAF22654823001BE6D3 /* SeqListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 63975EAE22654823001BE6D3 /* SeqListTests.m */; };
 		639FCCA722D87A10009BD9EE /* SLWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 639FCCA622D87A10009BD9EE /* SLWebViewController.m */; };
 		639FCCB222D880E7009BD9EE /* backbutton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 639FCCAF22D87C56009BD9EE /* backbutton@2x.png */; };
@@ -296,6 +297,8 @@
 		63489785231F90450048EC6B /* LeafView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeafView.m; sourceTree = "<group>"; };
 		6355FE682330D3C000E9BBCC /* UIView+Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Common.h"; sourceTree = "<group>"; };
 		6355FE692330D3C000E9BBCC /* UIView+Common.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Common.m"; sourceTree = "<group>"; };
+		637FED37236BD4F9004D5AC1 /* UILabelViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UILabelViewController.h; sourceTree = "<group>"; };
+		637FED38236BD4F9004D5AC1 /* UILabelViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UILabelViewController.m; sourceTree = "<group>"; };
 		63975EAE22654823001BE6D3 /* SeqListTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SeqListTests.m; sourceTree = "<group>"; };
 		639FCCA522D87A10009BD9EE /* SLWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLWebViewController.h; sourceTree = "<group>"; };
 		639FCCA622D87A10009BD9EE /* SLWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLWebViewController.m; sourceTree = "<group>"; };
@@ -654,6 +657,7 @@
 		20CFE521221128DE00B9C132 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				637FED36236BD4D6004D5AC1 /* Base */,
 				6348977D231F8E640048EC6B /* TreeView */,
 				639FCCA422D879E4009BD9EE /* WebView */,
 				20639523225AE08300F0D4D7 /* ImagePicker */,
@@ -815,6 +819,15 @@
 				63F44EAF2321ED7000D78B5D /* LeafInfoModel.m */,
 			);
 			path = TreeView;
+			sourceTree = "<group>";
+		};
+		637FED36236BD4D6004D5AC1 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				637FED37236BD4F9004D5AC1 /* UILabelViewController.h */,
+				637FED38236BD4F9004D5AC1 /* UILabelViewController.m */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 		639FCCA422D879E4009BD9EE /* WebView */ = {
@@ -1034,6 +1047,7 @@
 				206C3F3F21F1B8480000F116 /* UILabel+Manage.m in Sources */,
 				6355FE6A2330D3C000E9BBCC /* UIView+Common.m in Sources */,
 				20560E8D21F9B18E000B927F /* GKURLConnectionDeligateDownloadViewController.m in Sources */,
+				637FED39236BD4F9004D5AC1 /* UILabelViewController.m in Sources */,
 				2063955E225B188400F0D4D7 /* DNAsset.m in Sources */,
 				20639557225B188400F0D4D7 /* DNUnAuthorizedTipsView.m in Sources */,
 				2063957A225C654A00F0D4D7 /* UIImage+Crop.m in Sources */,

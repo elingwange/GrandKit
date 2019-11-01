@@ -64,6 +64,10 @@
 -(void)initData{
     _groupArray=[[NSMutableArray alloc]init];
     
+    GKPoint *point71 = [GKPoint initWithName:@"UILabel" andClass:@"UILabelViewController"];
+    GKGroup *group7 = [GKGroup initWithName:@"Base UI" andDetail:@"" andPoints:[NSMutableArray arrayWithObjects:point71, nil]];
+    [_groupArray addObject:group7];
+    
     GKPoint *point61 = [GKPoint initWithName:@"ImagePicker Default" andClass:@"EFImagePickerViewController2"];
     GKPoint *point62 = [GKPoint initWithName:@"ImagePicker Custom" andClass:@"ImagePickerDemoViewController"];
     GKPoint *point63 = [GKPoint initWithName:@"WebView" andClass:@"SLWebViewController"];
